@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#e5e2e1", "on-primary-fixed-variant": "#930007", "surface-variant": "#353534", "primary-container": "#e50914", "on-tertiary": "#003913", "inverse-primary": "#c0000c", "on-surface-variant": "#e9bcb6", "on-secondary": "#2f3131", "surface-container-low": "#1c1b1b", "on-primary-container": "#fff7f6", "error-container": "#93000a", "error": "#ffb4ab", "outline": "#af8782", "surface-container-lowest": "#0e0e0e", "primary-fixed": "#ffdad5", "on-tertiary-fixed-variant": "#00531f", "tertiary-container": "#008536", "surface-tint": "#ffb4aa", "on-primary": "#690003", "background": "#131313", "tertiary": "#55e074", "inverse-surface": "#e5e2e1", "on-secondary-container": "#b4b5b5", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#002108", "inverse-on-surface": "#313030", "primary": "#ffb4aa", "tertiary-fixed-dim": "#55e074", "secondary-fixed-dim": "#c6c6c7", "on-secondary-fixed": "#1a1c1c", "surface-dim": "#131313", "surface-container-high": "#2a2a2a", "on-primary-fixed": "#410001", "surface-container-highest": "#353534", "secondary-container": "#454747", "surface-bright": "#393939", "surface": "#131313", "on-surface": "#e5e2e1", "secondary": "#c6c6c7", "on-tertiary-container": "#ecffe8", "on-error": "#690005", "surface-container": "#201f1f", "on-secondary-fixed-variant": "#454747", "secondary-fixed": "#e2e2e2", "tertiary-fixed": "#74fe8e", "outline-variant": "#5e3f3b", "primary-fixed-dim": "#ffb4aa" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "3.5rem", "gutter": "0.75rem", "space-lg": "1.5rem" }, "fontFamily": { "body-md": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Space Grotesk" ], "label-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Space Grotesk" ], "label-badge": [ "Plus Jakarta Sans" ], "display-hero": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ] }, "fontSize": { "body-md": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-badge": [ "11px", { "lineHeight": "14px", "fontWeight": "700" } ], "display-hero": [ "64px", { "lineHeight": "72px", "fontWeight": "700" } ], "display-hero-mobile": [ "36px", { "lineHeight": "42px", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "34px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-surface-container-lowest/95 via-surface/80 to-transparent backdrop-blur-md transition-colors duration-300"><div class="h-16 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm shrink-0"><img alt="StreamFlix Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XN_yRbpwS3FKIhlbVtry7brPSdZTULbNZGogFVLDyu-8ThrpA0OLzWg4-0Ap2cbc47eOAPRy_nOaaz0uuF_86IQooUaIr1xrFKjLPCsSD76Zn7KO_UdaSAzNzYmgq3W4fBZvwBKZtMAW_4v73Yqq0XLsrREr5fkdwCyfCaaVLmZNdVVKaeLAiw8-szF4sCUhr35PQhsdKKr69yvMF3mMlsvoeKuW6OateFab5V1HmdHX7myALImxaAFLU7"/><span class="font-headline-sm text-headline-sm tracking-wider uppercase text-primary-container hidden sm:inline-block font-bold">StreamFlix</span></div><nav class="hidden lg:flex items-center gap-space-md font-label-lg text-label-lg" data-active-classes="text-on-surface font-bold"><a aria-current="page" class="transition-colors text-on-surface font-bold" data-path="home" href="#">Home</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="tv-shows" href="#">TV Shows</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="new-and-popular" href="#">New &amp; Popular</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-list" href="#">My List</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="browse-by-languages" href="#">Browse by Languages</a></nav></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><button aria-label="Search" class="p-space-xs text-on-surface hover:text-on-surface-variant transition-colors focus:outline-none" type="button"><span class="material-symbols-outlined">search</span></button></div><button aria-label="Notifications" class="relative p-space-xs text-on-surface hover:text-on-surface-variant transition-colors focus:outline-none" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-primary-container"></span></button><div class="flex items-center gap-space-xs cursor-pointer group"><div class="w-8 h-8 rounded overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqNsZ4FfwvyGsACqmQjqEjY53PZVtvhf6dNO6jtwnHVPrMOIU-cjZP9sD11XMhTR_JHCY_OHQQFQcOsjwo47JzYBWTbOsJVNWnM_FR2fRHs2IuNhR0fNXjQxRzoCKkEccLNnyeBTYk2jaEAXIaj9Gb-pe9eWeeLLh7YpvnRUG2D51IPezwgJQ9ZnNwbDGTjtZotvZ5FbFgBTe_4PktD-pvWk0M4wBzhIYmxReTXM7syVrr--k4NSCsbg"/></div><span class="material-symbols-outlined text-body-sm font-body-sm text-on-surface group-hover:rotate-180 transition-transform duration-200">arrow_drop_down</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<section class="relative w-full overflow-hidden bg-surface-container-lowest py-space-xl">
+<div class="pointer-events-none absolute -top-24 right-12 h-96 w-96 rounded-full bg-primary-container/10 blur-3xl"></div>
+<div class="pointer-events-none absolute -bottom-16 left-0 h-80 w-80 rounded-full bg-primary-container/5 blur-2xl"></div>
+<div class="mx-auto w-full max-w-7xl px-margin">
+<div class="mb-space-lg flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-secondary-container">
+<span class="hover:text-on-surface cursor-pointer">Account</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-on-surface">Settings &amp; Preferences</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-primary-container font-semibold">India Portal</span>
+</div>
+<div class="flex items-center gap-space-xs rounded-full bg-surface-container px-space-sm py-1 font-label-badge text-label-badge text-tertiary">
+<span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>ACCOUNT HEALTHY • ACTIVE AUTOPAY</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+<div class="relative">
+<div class="h-24 w-24 overflow-hidden rounded-xl bg-surface-container shadow-xl">
+<img class="h-full w-full object-cover" data-alt="Cinematic high contrast portrait of Rahul Sharma, an Indian film enthusiast in atmospheric red and charcoal ambient studio lighting, sharp focus, movie studio styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlC69xbLAm2vGIosqZAbdlfMJP-6A-u4bG1981Dl2uIMGVzKApX-a7km_ofXNWKwnuFG3MpKLAWYOXv4iDDbhL_E2SAJOFyIfAnmvPj75IYg0ohFLz9SxTRHnvMHVDEo6OMKd3o0w55G4JWAPaGO-GJ64QVViOBPtOm8k--9uszDERz95Kw4L5MGxunfekhPHl8e8temVZaZdsS5oOgRx52W3Yn5P2Ac2dj3JXtKy7NULe04qjioW6Wg"/>
+</div>
+<span class="absolute -bottom-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full bg-primary-container text-on-primary-container shadow-md" title="Main Account Holder">
+<span class="material-symbols-outlined text-base">verified</span>
+</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">Rahul Sharma</h1>
+<span class="rounded bg-primary-container px-space-xs py-0.5 font-label-badge text-label-badge tracking-wider text-on-primary-container uppercase">Premium Ultra HD 4K</span>
+<span class="rounded bg-surface-container-high px-space-xs py-0.5 font-label-badge text-label-badge text-secondary">HDR10+ / Atmos</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container">
+              rahul.sharma88@gmail.com • Member since November 2023 • Region: India (IN)
+            </p>
+<div class="flex items-center gap-space-sm pt-1">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-base">movie</span>
+                CINEWOOD Originals Member
+              </span>
+<span class="text-on-secondary-container">•</span>
+<span class="font-label-md text-label-md text-secondary">Household Group Active</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-stretch sm:self-auto">
+<button class="flex flex-1 sm:flex-none items-center justify-center gap-space-xs rounded bg-surface-container-high px-space-md py-space-sm font-label-lg text-label-lg text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-base">share</span>
+<span>Invite Family</span>
+</button>
+<button class="flex flex-1 sm:flex-none items-center justify-center gap-space-xs rounded bg-primary-container px-space-md py-space-sm font-label-lg text-label-lg text-on-primary-container hover:opacity-90 shadow-lg shadow-primary-container/20 transition-all" type="button">
+<span class="material-symbols-outlined text-base">tune</span>
+<span>Quick Setup</span>
+</button>
+</div>
+</div>
+<div class="mt-space-xl grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-secondary-container">
+<span class="font-label-md text-label-md">Profiles Slot</span>
+<span class="material-symbols-outlined text-base text-primary-container">groups</span>
+</div>
+<div class="mt-space-xs flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">4</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container">/ 5 In Use</span>
+</div>
+<div class="mt-space-sm h-1.5 w-full overflow-hidden rounded-full bg-surface-container-highest">
+<div class="h-full rounded-full bg-primary-container" style="width: 80%"></div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-secondary-container">
+<span class="font-label-md text-label-md">Download Devices</span>
+<span class="material-symbols-outlined text-base text-secondary">download_done</span>
+</div>
+<div class="mt-space-xs flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">3</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container">/ 6 Registered</span>
+</div>
+<div class="mt-space-sm h-1.5 w-full overflow-hidden rounded-full bg-surface-container-highest">
+<div class="h-full rounded-full bg-secondary" style="width: 50%"></div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-secondary-container">
+<span class="font-label-md text-label-md">This Month Stream</span>
+<span class="material-symbols-outlined text-base text-tertiary">query_stats</span>
+</div>
+<div class="mt-space-xs flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">54.6</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container">Hours logged</span>
+</div>
+<p class="mt-space-xs font-label-badge text-label-badge text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">arrow_upward</span> +18% Tollywood &amp; Kollywood releases
+          </p>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-secondary-container">
+<span class="font-label-md text-label-md">Primary Audio Hub</span>
+<span class="material-symbols-outlined text-base text-primary">translate</span>
+</div>
+<div class="mt-space-xs flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Telugu</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container">+ 3 Dubs</span>
+</div>
+<p class="mt-space-xs font-label-badge text-label-badge text-on-secondary-container truncate">
+            Tamil, Kannada, Hindi auto-detect
+          </p>
+</div>
+</div>
+</div>
+</section>
+<div class="mx-auto w-full max-w-7xl px-margin py-space-xl space-y-space-xl">
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="rounded-xl bg-surface-container p-space-lg shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold">Membership &amp; Billing (India)</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">Cinewood Premium 4K + Atmos</h2>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">₹649</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container"> / month</span>
+</div>
+</div>
+<div class="mt-space-md grid grid-cols-1 sm:grid-cols-2 gap-space-md rounded-lg bg-surface-container-low p-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-secondary-container">Next AutoPay Renewal</span>
+<p class="font-body-md text-body-md font-semibold text-on-surface">24 November 2024</p>
+<span class="font-label-md text-label-md text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">lock</span> UPI E-Mandate Active
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-secondary-container">Primary Payment Channel</span>
+<div class="flex items-center gap-space-xs">
+<span class="rounded bg-surface-container-high px-2 py-0.5 font-label-badge text-label-badge font-bold text-on-surface">UPI</span>
+<p class="font-body-md text-body-md font-semibold text-on-surface">rahul.sharma@okhdfcbank</p>
+</div>
+<span class="font-body-sm text-body-sm text-on-secondary-container">Backup: RuPay Debit Card (•••• 4092)</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="rounded bg-primary-container px-space-md py-space-sm font-label-lg text-label-lg font-bold text-on-primary-container hover:opacity-90 transition-opacity" type="button">
+              Change Plan
+            </button>
+<button class="rounded bg-surface-container-high px-space-md py-space-sm font-label-lg text-label-lg text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+              Manage UPI Mandate
+            </button>
+<button class="rounded bg-surface-container-high px-space-md py-space-sm font-label-lg text-label-lg text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+              Tax Invoices (GSTIN)
+            </button>
+<button class="rounded bg-surface-container-low px-space-md py-space-sm font-label-lg text-label-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors ml-auto" type="button">
+              Cancel Membership
+            </button>
+</div>
+<div class="mt-space-md flex items-center justify-between rounded bg-surface-container-highest/60 px-space-md py-space-xs">
+<div class="flex items-center gap-space-xs text-on-secondary-container font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+<span>Last charged ₹649 on Oct 24, 2024 (Invoice #CIN-IN-98234)</span>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Download PDF</a>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container p-space-lg shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold">Household &amp; Access</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">Profiles &amp; Parental Safeguards</h2>
+</div>
+<button class="flex items-center gap-1 rounded bg-surface-container-high px-space-sm py-1.5 font-label-md text-label-md text-on-surface hover:bg-surface-container-highest" type="button">
+<span class="material-symbols-outlined text-base">person_add</span>
+<span>Add Profile</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="relative flex flex-col justify-between rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container-high/60 transition-colors">
+<div class="flex items-start gap-space-sm">
+<div class="h-14 w-14 overflow-hidden rounded-lg bg-surface-container">
+<img class="h-full w-full object-cover" data-alt="Profile avatar Rahul, Indian tech professional with glasses in cinema-grade studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByvwB2-8qvp0pCbxX3g-I7G3TuDUViTLQ_guns49EXvj3s0XjI1rCyYWfnUYl84biRtbC2DxZmI9Ji-Q7YMN4KsgDJpWYMzorIfV2D0KXFUsGBnZtmQNBCUznZbfMUiyhjnAW8eo-ZEkcg4figmH-4BTyeQ-0fr0Iwleaxmwspru4FZLgW6NLqdXYrqJapfBs8MR8y6fF_8W1P1OnE3BYD6sR3s9JT-FTUo4DnixyVBENuCdB2B383zw"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Rahul (Primary)</h3>
+<span class="material-symbols-outlined text-base text-primary-container" title="Account Admin">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container">All Maturity Ratings • No PIN</p>
+<div class="mt-space-xs flex flex-wrap gap-1">
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-on-surface">Audio: Telugu + En</span>
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-on-surface">Subtitles: En</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<span class="font-label-badge text-label-badge text-tertiary flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span> Watching now on TV
+                </span>
+<button class="font-label-md text-label-md text-primary hover:underline" type="button">Edit Profile</button>
+</div>
+</div>
+<div class="relative flex flex-col justify-between rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container-high/60 transition-colors">
+<div class="flex items-start gap-space-sm">
+<div class="h-14 w-14 overflow-hidden rounded-lg bg-surface-container">
+<img class="h-full w-full object-cover" data-alt="Portrait avatar Priya, modern Indian woman smiling with subtle theatrical rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU-MN-SApx8BVMf7vY5GeHfhpjvH0DsBegXn7IS3J--swEPAzxm8nP4PCvlB1hCGqmbtM5b4AlH4qYJrl4zpVNfySXZvl46thgGmJ79bE2YoN3f7jkaW0nGOXGpTwknsVxyxNI0I-8QOe_qAwfRPNzlGXaSpbdnHOB30uKRCHeax1H9_MH2Tj3McAOVxrDqhCoHs86d5T1yvdT0feu0p7A0rwxIO1HLjP8_vR3ket1ST-B0kH80_eKlQ"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Priya</h3>
+<span class="material-symbols-outlined text-sm text-on-secondary-container" title="PIN Protected">lock</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container">U/A 16+ • 4-Digit Lock Active</p>
+<div class="mt-space-xs flex flex-wrap gap-1">
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-on-surface">Audio: Tamil</span>
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-on-surface">Auto-play Next</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<span class="font-label-badge text-label-badge text-on-secondary-container">Active 2 hrs ago</span>
+<button class="font-label-md text-label-md text-primary hover:underline" type="button">Edit Profile</button>
+</div>
+</div>
+<div class="relative flex flex-col justify-between rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container-high/60 transition-colors">
+<div class="flex items-start gap-space-sm">
+<div class="h-14 w-14 overflow-hidden rounded-lg bg-surface-container flex items-center justify-center bg-primary-container/20">
+<span class="material-symbols-outlined text-3xl text-primary-container">cruelty_free</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Kids Corner</h3>
+<span class="rounded bg-tertiary/20 text-tertiary px-1.5 py-0.2 font-label-badge text-label-badge">U / U-A 7+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container">Filtered Animated &amp; Family Media</p>
+<div class="mt-space-xs flex flex-wrap gap-1">
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-on-surface">Telugu / Hindi</span>
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-tertiary">Safe Search ON</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<span class="font-label-badge text-label-badge text-on-secondary-container">Bedtime lock: 9:00 PM</span>
+<button class="font-label-md text-label-md text-primary hover:underline" type="button">Edit Restrictions</button>
+</div>
+</div>
+<div class="relative flex flex-col justify-between rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container-high/60 transition-colors">
+<div class="flex items-start gap-space-sm">
+<div class="h-14 w-14 overflow-hidden rounded-lg bg-surface-container">
+<img class="h-full w-full object-cover" data-alt="Senior Indian couple avatar smiling warm expressions, cinematic lighting with gold and crimson backlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgzuvgFlCpW9qk4rha_pO1KdvQUjFoJaKfSm1MqzS5oHofNNYANZ15zd6oEAZUDbYyPpf0UNiOIKq5dga_NOm_iL3spPbvmJTTD1Ug31nti3uinQ0gf_1YfIZ7K_9o41nR3vucbzY2VpE4YXueQSCOhzbdLeutsrYJJzRslMQmiry12D4da60GuQ14S-lwg1iuuCqAu-14BBm3uLGOal0yajn8n2wQj31Rs4gtt4sbTRNN-z9zYid3FQ"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Parents Lounge</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container">Regional Classics • Large Font UI</p>
+<div class="mt-space-xs flex flex-wrap gap-1">
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-on-surface">Audio: Kannada + Te</span>
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-on-surface">Subs: Large Yellow</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<span class="font-label-badge text-label-badge text-on-secondary-container">Last active yesterday</span>
+<button class="font-label-md text-label-md text-primary hover:underline" type="button">Edit Profile</button>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container p-space-lg shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold">Indian Dialect &amp; Stream Engine</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">Regional Audio &amp; Subtitle Pipeline</h2>
+</div>
+<button class="font-label-md text-label-md text-primary hover:underline" type="button">Reset to Default</button>
+</div>
+<div class="space-y-space-md">
+<div class="rounded-lg bg-surface-container-low p-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Primary Audio Track Priority</h4>
+<p class="font-body-sm text-body-sm text-on-secondary-container">Content will automatically play in this vernacular dub if available</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="rounded bg-primary-container px-space-sm py-1 font-label-badge text-label-badge font-bold text-on-primary-container">1. Telugu (Original)</span>
+<span class="material-symbols-outlined text-sm text-on-secondary-container">drag_indicator</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-wrap gap-space-xs">
+<span class="rounded-full bg-surface-container-high px-3 py-1 font-label-md text-label-md text-on-surface flex items-center gap-1 cursor-grab">
+<span class="text-primary-container font-bold">2.</span> Tamil
+                </span>
+<span class="rounded-full bg-surface-container-high px-3 py-1 font-label-md text-label-md text-on-surface flex items-center gap-1 cursor-grab">
+<span class="text-primary-container font-bold">3.</span> Kannada
+                </span>
+<span class="rounded-full bg-surface-container-high px-3 py-1 font-label-md text-label-md text-on-surface flex items-center gap-1 cursor-grab">
+<span class="text-primary-container font-bold">4.</span> Malayalam
+                </span>
+<span class="rounded-full bg-surface-container-high px-3 py-1 font-label-md text-label-md text-on-surface flex items-center gap-1 cursor-grab">
+<span class="text-primary-container font-bold">5.</span> Hindi
+                </span>
+<span class="rounded-full bg-surface-container-high px-3 py-1 font-label-md text-label-md text-on-surface flex items-center gap-1 cursor-grab">
+<span class="text-primary-container font-bold">6.</span> English
+                </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="rounded-lg bg-surface-container-low p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Spatial Audio &amp; Dolby Atmos</h4>
+<input checked="" class="h-5 w-5 accent-primary-container rounded cursor-pointer" type="checkbox"/>
+</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-secondary-container">Enhanced theatrical surround sound for compatible soundbars &amp; headphones.</p>
+</div>
+<div class="mt-space-md flex items-center gap-2">
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-on-surface">5.1 Surround</span>
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-badge text-label-badge text-on-surface">Dolby Digital+</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Video Resolution &amp; Data Saving</h4>
+<span class="font-label-md text-label-md text-primary-container font-semibold">4K UHD</span>
+</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-secondary-container">High: Best video quality (up to 7 GB/hour per screen for Ultra HD).</p>
+</div>
+<div class="mt-space-md grid grid-cols-4 gap-1 text-center font-label-badge text-label-badge">
+<button class="rounded bg-surface-container-highest py-1 text-on-secondary-container hover:bg-surface-bright" type="button">Auto</button>
+<button class="rounded bg-surface-container-highest py-1 text-on-secondary-container hover:bg-surface-bright" type="button">Low</button>
+<button class="rounded bg-surface-container-highest py-1 text-on-secondary-container hover:bg-surface-bright" type="button">Medium</button>
+<button class="rounded bg-primary-container py-1 text-on-primary-container font-bold" type="button">4K High</button>
+</div>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Regional Subtitle Styling</h4>
+<p class="font-body-sm text-body-sm text-on-secondary-container">Optimized for Indic script ligatures (Telugu, Tamil, Devanagari)</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="rounded bg-surface-container-lowest px-3 py-1 text-center font-body-md text-body-md text-yellow-300 font-bold border-0">
+                    సినిమా • படம் • Cinema
+                  </div>
+<button class="rounded bg-surface-container-high px-space-sm py-1 font-label-md text-label-md text-on-surface hover:bg-surface-container-highest" type="button">
+                    Customize
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="rounded-xl bg-surface-container p-space-lg shadow-md">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold">Active Hardware</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">Device Control</h2>
+</div>
+<span class="rounded-full bg-surface-container-high px-2 py-0.5 font-label-badge text-label-badge text-on-surface">3 Online</span>
+</div>
+<div class="space-y-space-sm">
+<div class="rounded-lg bg-surface-container-low p-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-2xl">tv</span>
+<div>
+<h5 class="font-label-lg text-label-lg text-on-surface font-bold">Sony Bravia 4K OLED</h5>
+<p class="font-body-sm text-body-sm text-on-secondary-container">Living Room • Bengaluru</p>
+</div>
+</div>
+<span class="rounded bg-tertiary/20 text-tertiary font-label-badge text-label-badge px-1.5 py-0.5">Streaming</span>
+</div>
+<p class="mt-space-xs font-label-badge text-label-badge text-on-secondary-container">
+                Playing: <span class="text-on-surface italic">Devara: Part 1</span> (Dolby Atmos)
+              </p>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">smartphone</span>
+<div>
+<h5 class="font-label-lg text-label-lg text-on-surface font-bold">OnePlus 11 5G</h5>
+<p class="font-body-sm text-body-sm text-on-secondary-container">Hyderabad • Rahul Sharma</p>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-on-secondary-container">28m ago</span>
+</div>
+<p class="mt-space-xs font-label-badge text-label-badge text-on-secondary-container">
+                3 Downloads stored (Offline mode)
+              </p>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">laptop_mac</span>
+<div>
+<h5 class="font-label-lg text-label-lg text-on-surface font-bold">MacBook Pro 16"</h5>
+<p class="font-body-sm text-body-sm text-on-secondary-container">Chennai • Chrome Web Player</p>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-on-secondary-container">Yesterday</span>
+</div>
+<p class="mt-space-xs font-label-badge text-label-badge text-on-secondary-container">
+                Signed in via Google OAuth
+              </p>
+</div>
+</div>
+<div class="mt-space-md space-y-space-xs">
+<button class="w-full flex items-center justify-center gap-space-xs rounded bg-surface-container-high py-space-sm font-label-lg text-label-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">logout</span>
+<span>Sign Out of All Devices</span>
+</button>
+<p class="text-center font-label-badge text-label-badge text-on-secondary-container pt-1">
+              Requires PIN confirmation on primary phone number
+            </p>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container p-space-lg shadow-md">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface mb-space-md">Quick Shortcuts</h2>
+<div class="space-y-space-xs font-label-lg text-label-lg">
+<a class="flex items-center justify-between rounded-lg bg-surface-container-low px-space-md py-space-sm text-on-surface hover:bg-surface-container-high transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-base">history</span>
+<span>Viewing Activity &amp; Rewatch</span>
+</div>
+<span class="material-symbols-outlined text-base text-on-secondary-container">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-surface-container-low px-space-md py-space-sm text-on-surface hover:bg-surface-container-high transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-base">grade</span>
+<span>My Ratings &amp; Recommendations</span>
+</div>
+<span class="material-symbols-outlined text-base text-on-secondary-container">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-surface-container-low px-space-md py-space-sm text-on-surface hover:bg-surface-container-high transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-base">move_up</span>
+<span>Transfer a Profile to New Account</span>
+</div>
+<span class="material-symbols-outlined text-base text-on-secondary-container">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-surface-container-low px-space-md py-space-sm text-on-surface hover:bg-surface-container-high transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-base">security</span>
+<span>Password &amp; Two-Factor (2FA)</span>
+</div>
+<span class="material-symbols-outlined text-base text-on-secondary-container">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-surface-container-low px-space-md py-space-sm text-on-surface hover:bg-surface-container-high transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-base">cloud_download</span>
+<span>Download Personal Data Archive</span>
+</div>
+<span class="material-symbols-outlined text-base text-on-secondary-container">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="rounded-xl bg-gradient-to-br from-primary-container/20 via-surface-container to-surface-container p-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-3xl">headset_mic</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Need Help in Your Language?</h4>
+<p class="font-body-sm text-body-sm text-on-secondary-container mt-1">
+                24/7 dedicated streaming support available in Telugu, Tamil, Hindi, and English.
+              </p>
+<div class="mt-space-sm flex items-center gap-space-sm">
+<button class="rounded bg-primary-container px-3 py-1 font-label-md text-label-md text-on-primary-container font-bold hover:opacity-90" type="button">
+                  Live Chat
+                </button>
+<button class="rounded bg-surface-container-high px-3 py-1 font-label-md text-label-md text-on-surface hover:bg-surface-bright" type="button">
+                  Request Call Back
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-secondary-container mt-space-xl"><div class="w-full max-w-7xl mx-auto px-margin py-space-xl"><div class="flex items-center gap-space-lg mb-space-lg text-on-surface"><button aria-label="Facebook" class="hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined">public</span></button><button aria-label="Instagram" class="hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined">photo_camera</span></button><button aria-label="Twitter" class="hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined">chat</span></button><button aria-label="YouTube" class="hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined">smart_display</span></button></div><div class="grid grid-cols-2 md:grid-cols-4 gap-space-md font-body-sm text-body-sm mb-space-lg"><div class="flex flex-col gap-space-sm"><a class="hover:underline" href="#">Audio Description</a><a class="hover:underline" href="#">Investor Relations</a><a class="hover:underline" href="#">Legal Notices</a></div><div class="flex flex-col gap-space-sm"><a class="hover:underline" href="#">Help Center</a><a class="hover:underline" href="#">Jobs</a><a class="hover:underline" href="#">Cookie Preferences</a></div><div class="flex flex-col gap-space-sm"><a class="hover:underline" href="#">Gift Cards</a><a class="hover:underline" href="#">Terms of Use</a><a class="hover:underline" href="#">Corporate Information</a></div><div class="flex flex-col gap-space-sm"><a class="hover:underline" href="#">Media Center</a><a class="hover:underline" href="#">Privacy</a><a class="hover:underline" href="#">Contact Us</a></div></div><div class="mb-space-lg"><button class="font-label-md text-label-md px-space-sm py-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface rounded transition-colors" type="button">Service Code</button></div><p class="font-label-badge text-label-badge text-on-secondary-container">© 1997-2024 StreamFlix, Inc.</p></div></footer></body></html>

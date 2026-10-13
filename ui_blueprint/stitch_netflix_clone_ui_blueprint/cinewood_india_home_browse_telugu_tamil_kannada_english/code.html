@@ -1,0 +1,749 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700;900&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#e5e2e1", "on-primary-fixed-variant": "#930007", "surface-variant": "#353534", "primary-container": "#e50914", "on-tertiary": "#003913", "inverse-primary": "#c0000c", "on-surface-variant": "#e9bcb6", "on-secondary": "#2f3131", "surface-container-low": "#1c1b1b", "on-primary-container": "#fff7f6", "error-container": "#93000a", "error": "#ffb4ab", "outline": "#af8782", "surface-container-lowest": "#0e0e0e", "primary-fixed": "#ffdad5", "on-tertiary-fixed-variant": "#00531f", "tertiary-container": "#008536", "surface-tint": "#ffb4aa", "on-primary": "#690003", "background": "#131313", "tertiary": "#55e074", "inverse-surface": "#e5e2e1", "on-secondary-container": "#b4b5b5", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#002108", "inverse-on-surface": "#313030", "primary": "#ffb4aa", "tertiary-fixed-dim": "#55e074", "secondary-fixed-dim": "#c6c6c7", "on-secondary-fixed": "#1a1c1c", "surface-dim": "#131313", "surface-container-high": "#2a2a2a", "on-primary-fixed": "#410001", "surface-container-highest": "#353534", "secondary-container": "#454747", "surface-bright": "#393939", "surface": "#131313", "on-surface": "#e5e2e1", "secondary": "#c6c6c7", "on-tertiary-container": "#ecffe8", "on-error": "#690005", "surface-container": "#201f1f", "on-secondary-fixed-variant": "#454747", "secondary-fixed": "#e2e2e2", "tertiary-fixed": "#74fe8e", "outline-variant": "#5e3f3b", "primary-fixed-dim": "#ffb4aa" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "3.5rem", "gutter": "0.75rem", "space-lg": "1.5rem" }, "fontFamily": { "body-md": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Space Grotesk" ], "label-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Space Grotesk" ], "label-badge": [ "Plus Jakarta Sans" ], "display-hero": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ] }, "fontSize": { "body-md": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-badge": [ "11px", { "lineHeight": "14px", "fontWeight": "700" } ], "display-hero": [ "64px", { "lineHeight": "72px", "fontWeight": "700" } ], "display-hero-mobile": [ "36px", { "lineHeight": "42px", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "34px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Sticky Combined Header and Indian Language Pill Quick-Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-surface-container-lowest/95 via-surface-container-lowest/90 to-surface/80 backdrop-blur-md transition-colors duration-300 border-b border-surface-container/60">
+<div class="h-16 w-full px-margin flex items-center justify-between">
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-space-sm shrink-0 cursor-pointer">
+<img alt="Cinewood Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U6PUSmEcOEN_SBwdFNX_-jXvpl7GxsvlwfDLVuHfsWyr1jwJ4nxxq_7Qi4HW_u4f9fL1wrXv4qOCOrSolGyI0gT0tghIU7wythvlQOSsmG4Q-EbtKVfGYM-Muejm8cHrf-oda-nXZuSSeo3BIHW4bFye3bKdfPaoiA-4Hov0ynDHzM363JVN_Ni8Rj4A01yboID5hqX92c_lHgGywKbqXTEtiUhx11lHXGohTwPEuPwx2oD03uXtWYFGE2">
+<span class="font-headline-sm text-headline-sm tracking-wider uppercase text-primary-container font-black">CINE<span class="text-on-surface">WOOD</span></span>
+</div>
+<nav class="hidden xl:flex items-center gap-space-md font-label-lg text-label-lg" data-active-classes="text-on-surface font-bold">
+<a aria-current="page" class="transition-colors text-on-surface font-bold" data-path="home" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="tv-shows" href="#">TV Shows</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="languages" href="#">Languages</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="top-10-india" href="#">Top 10 India</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-list" href="#">My List</a>
+</nav>
+</div>
+<!-- Right Utility Controls with User Avatar -->
+<div class="flex items-center gap-space-md">
+<div class="relative flex items-center">
+<button aria-label="Search" class="p-space-xs text-on-surface hover:text-on-surface-variant transition-colors focus:outline-none" type="button">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+<button aria-label="Notifications" class="relative p-space-xs text-on-surface hover:text-on-surface-variant transition-colors focus:outline-none" type="button">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-primary-container"></span>
+</button>
+<div class="flex items-center gap-space-xs cursor-pointer group">
+<div class="w-8 h-8 rounded overflow-hidden ring-1 ring-primary-container/40">
+<img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WUZwE2ZPaZ7uSqQVo0iVswBY28oHkynzaCpe9D73PCB7OoutHqwQYh5rA3dIuI0wxojdQgxZ-TzAvgRmlfrFF3WVktqg-66lcOLvuA8kA4q0_ChSAj207ZgMtZ4eCEO1pQB0KkVHGP_j7FtepdtoyDoRdJAZtDbljLn80f0BzgmnoVaRvvy3T6Cx1nu9-EY3HbSBa_DCApHajD-Thi_3ZfqFXWaaA-rS85c5YOJRUc8nUzVr68FgM8YEA_">
+</div>
+<span class="material-symbols-outlined text-body-sm font-body-sm text-on-surface group-hover:rotate-180 transition-transform duration-200">arrow_drop_down</span>
+</div>
+</div>
+</div>
+<!-- Regional Language Quick Filter Bar -->
+<div class="w-full px-margin pb-2.5 pt-0.5 flex items-center gap-2 overflow-x-auto scrollbar-none text-label-md">
+<span class="text-on-secondary-container text-label-badge uppercase font-bold tracking-wider shrink-0 flex items-center gap-1 mr-1">
+<span class="material-symbols-outlined text-body-sm text-primary">translate</span>
+      Languages:
+    </span>
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-semibold transition-colors shrink-0">All</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors shrink-0 flex items-center gap-1">
+<span>Telugu</span>
+<span class="text-label-badge text-secondary">(తెలుగు)</span>
+</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors shrink-0 flex items-center gap-1">
+<span>Tamil</span>
+<span class="text-label-badge text-secondary">(தமிழ்)</span>
+</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors shrink-0 flex items-center gap-1">
+<span>Kannada</span>
+<span class="text-label-badge text-secondary">(ಕನ್ನಡ)</span>
+</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors shrink-0">English</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors shrink-0">Hindi</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors shrink-0">Malayalam</button>
+</div>
+</header>
+<main class="w-full pt-24 bg-surface min-h-screen">
+<div class="flex flex-col w-full">
+<!-- HERO BILLBOARD SECTION: PAN-INDIA BLOCKBUSTER 'DEVARA: PART 1' -->
+<section class="relative w-full h-[880px] min-h-[640px] max-h-[920px] -mt-24 overflow-hidden flex items-end select-none">
+<!-- High-Intensity Epic Hero Backdrop -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-alt="High-octane Indian Pan-India blockbuster action scene with storm-tossed coastal cliffs, fierce warrior brandishing ancient blood-forged blades amidst torrential rains and fiery naval explosions, cinematic anamorphic scale" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCH2SR-gKgBAJCOWIH5-y7wnwV9m5sIV5JBsJLH46frRUDX8InXMXzkIwDngl4gmIcUMCuTE2FHCtDfc3h9NR4sMTjgqOH5ZsWXYmDabmzU0z2cI3uZLH5SScb12TlQSbfEf_WvlZvo_3D6HdYBy1S0U9xXZWLlPa4tTPMQU8zNN7kvAHjb61ODFjf4LYQY-Sk0tnHLr77xKGYi1r6Z-V6K8fE1OmMWS4MgCs0SNfm6cxiGznSiIYxSqw')"></div>
+<!-- Scrim Gradients -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/65 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/95 via-surface-container-lowest/75 to-transparent w-3/4"></div>
+<div class="absolute top-0 left-0 right-0 h-44 bg-gradient-to-b from-surface-container-lowest/90 via-surface/40 to-transparent pointer-events-none"></div>
+<!-- Hero Content Container -->
+<div class="relative z-10 w-full px-margin pb-space-xl pt-28 flex justify-between items-end">
+<div class="max-w-2xl flex flex-col gap-space-md">
+<!-- Top 10 India Badge -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center justify-center bg-primary-container px-space-xs py-0.5 rounded shadow-sm">
+<span class="font-headline-sm text-headline-sm text-on-primary-container tracking-tighter leading-none font-black">TOP</span>
+<span class="font-headline-lg text-headline-sm text-on-primary-container leading-none ml-0.5 font-black">10</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface uppercase tracking-widest drop-shadow font-bold">#1 in India Today</span>
+</div>
+<!-- Hero Title Graphic -->
+<div class="flex flex-col">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight uppercase leading-none drop-shadow-2xl font-black">
+              DEVARA<span class="text-primary-container">:</span> PART 1
+            </h1>
+<p class="font-label-md text-label-md text-secondary tracking-widest uppercase mt-space-xs font-semibold">
+              A Cinewood Pan-India Theatrical Exclusive
+            </p>
+</div>
+<!-- Regional Audio and Format Badges -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="text-tertiary font-label-lg text-label-lg font-bold">99% Match</span>
+<span class="bg-surface-variant/90 text-on-surface px-space-xs py-0.5 rounded font-label-badge text-label-badge backdrop-blur-md">U/A 16+</span>
+<span class="text-on-surface font-label-md text-label-md font-semibold">Telugu • Tamil • Kannada • Malayalam • Hindi</span>
+<span class="bg-surface-variant/90 text-on-surface px-space-xs py-0.5 rounded font-label-badge text-label-badge backdrop-blur-md">4K Ultra HD</span>
+<span class="bg-surface-variant/90 text-on-surface px-space-xs py-0.5 rounded font-label-badge text-label-badge backdrop-blur-md">Dolby Atmos</span>
+</div>
+<!-- Genre Tags -->
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-secondary">
+<span>High-Octane Action</span>
+<span class="text-outline">•</span>
+<span>Coastal Saga</span>
+<span class="text-outline">•</span>
+<span>Mass Drama</span>
+<span class="text-outline">•</span>
+<span>Revenge</span>
+</div>
+<!-- Synopsis -->
+<p class="font-body-lg text-body-lg text-on-surface/90 line-clamp-3 leading-relaxed drop-shadow max-w-xl">
+            In an untamed coastal red sea territory ruled by fearless smugglers, an indomitable protector vows to cleanse the waters of treachery. When sworn oaths collide with bloodlines, an epic storm of retribution erupts.
+          </p>
+<!-- CTA Action Cluster with Audio Pill -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<button class="group flex items-center justify-center gap-space-sm bg-on-surface text-surface-container-lowest font-headline-sm text-headline-sm px-space-lg py-space-sm rounded-lg hover:bg-on-surface/90 transition-all transform active:scale-95 shadow-xl cursor-pointer" type="button">
+<span class="material-symbols-outlined text-surface-container-lowest text-headline-md" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play</span>
+</button>
+<button class="group flex items-center justify-center gap-space-sm bg-surface-container-high/80 hover:bg-surface-container-high text-on-surface font-headline-sm text-headline-sm px-space-lg py-space-sm rounded-lg backdrop-blur-md transition-all shadow-md cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">info</span>
+<span>More Info</span>
+</button>
+<div class="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-highest/60 backdrop-blur-md border border-surface-container-highest text-secondary text-label-badge">
+<span class="material-symbols-outlined text-body-sm text-primary">graphic_eq</span>
+<span>Telugu [Original], Tamil, Kannada, English</span>
+</div>
+</div>
+</div>
+<!-- Hero Right Controls (Mute Toggle & Age Rating Badge) -->
+<div class="flex items-center gap-space-md">
+<button aria-label="Toggle Sound" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-highest/60 hover:bg-surface-container-highest/90 text-on-surface backdrop-blur-md transition-colors cursor-pointer shadow-lg" id="hero-sound-toggle" type="button">
+<span class="material-symbols-outlined text-headline-sm">volume_off</span>
+</button>
+<div class="bg-surface-container-highest/80 text-on-surface font-label-md text-label-md px-space-md py-1.5 rounded-l backdrop-blur-md shadow-md pl-space-md pr-space-lg flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>U/A 16+</span>
+<span class="text-on-secondary-container text-label-badge font-normal">Action / Violence</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTENT RAILS STACK -->
+<div class="relative z-20 flex flex-col gap-space-xl pb-space-xl -mt-8">
+<!-- RAIL 1: TOP 10 IN INDIA TODAY (Numbered Posters 1 to 5) -->
+<section class="w-full flex flex-col gap-space-sm group/rail">
+<div class="flex items-center justify-between px-margin">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-wide flex items-center gap-space-xs">
+            Top 10 in India Today
+            <span class="material-symbols-outlined text-secondary hover:text-on-surface cursor-pointer text-headline-sm transition-transform group-hover/rail:translate-x-1">chevron_right</span>
+</h2>
+<span class="font-label-md text-label-md text-primary font-semibold">Pan-India Daily Rankings</span>
+</div>
+<div class="relative w-full">
+<button aria-label="Previous items" class="absolute left-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_back_ios</span>
+</button>
+<button aria-label="Next items" class="absolute right-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_forward_ios</span>
+</button>
+<div class="flex gap-space-lg overflow-x-auto px-margin scrollbar-none py-space-sm items-center">
+<!-- Item #1 - RRR -->
+<div class="relative flex-none flex items-center group cursor-pointer">
+<svg class="w-24 h-48 -mr-6 z-0 select-none drop-shadow-2xl" viewBox="0 0 80 180">
+<text fill="#141414" font-family="'Space Grotesk', sans-serif" font-size="180" font-weight="700" stroke="#666" stroke-width="4" x="0" y="150">1</text>
+</svg>
+<div class="relative z-10 w-[160px] h-[240px] rounded-lg overflow-hidden shadow-2xl transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-2">
+<img class="w-full h-full object-cover" data-alt="RRR movie poster featuring revolutionary warriors in fire and water dynamic contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWRG_VAUu83tUo0Ga-LXSO7r8_a40kHSj8ZoXrfkrmI2ASAePkgm5z_6SiT4O5WLErTJbF8x79vsvs7QKeJ1VNPoy_iVIiTfAV2aaso4NjB1Nnsm7YrQHEkTqcoUDRBErZQgRSZVEuY61zlOyvLC6nxgPmpKHqPc0JqCHiIdDEKedySejcJHhyNXVVfZtJNLaB34YkbaUNvS4AZ1oB9WQffZZ11vEeF2H_U5DLK71TA9B5EPAk3LxkPA">
+<div class="absolute top-2 right-2 bg-primary-container text-on-primary-container px-1 py-0.5 rounded font-label-badge text-label-badge font-bold">TOP 10</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-2">
+<div class="text-xs font-bold text-on-surface truncate">RRR</div>
+<div class="text-[10px] text-tertiary">Telugu • 5 Langs</div>
+</div>
+</div>
+</div>
+<!-- Item #2 - K.G.F: Chapter 2 -->
+<div class="relative flex-none flex items-center group cursor-pointer">
+<svg class="w-28 h-48 -mr-6 z-0 select-none drop-shadow-2xl" viewBox="0 0 110 180">
+<text fill="#141414" font-family="'Space Grotesk', sans-serif" font-size="180" font-weight="700" stroke="#666" stroke-width="4" x="0" y="150">2</text>
+</svg>
+<div class="relative z-10 w-[160px] h-[240px] rounded-lg overflow-hidden shadow-2xl transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-2">
+<img class="w-full h-full object-cover" data-alt="KGF Chapter 2 gold mine empire gritty crime poster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmfm2FxjBM5tuOp91us7thJdGGyXeEONv7kN8bBXQwdL7LvptsOHVSh4d6fwoz7woseEsaO45RwIy1C93cxZoOzUNPUJnZzz1NIuTXxDa5R72z5ucMZQwuNxz6jOpSt8e79p6_PEM7G3W7H9yyGP8NVmyFr2cEz9gX41fv2Du7Nf4srITjAUmODHK9rkrKvezK6eAbfskNoTvqOZHJpXiGNbry9mgLZk8hfBlRWRpgkyUHwU3Tken1hQ">
+<div class="absolute top-2 right-2 bg-primary-container text-on-primary-container px-1 py-0.5 rounded font-label-badge text-label-badge font-bold">TOP 10</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-2">
+<div class="text-xs font-bold text-on-surface truncate">K.G.F: Chapter 2</div>
+<div class="text-[10px] text-tertiary">Kannada • 5 Langs</div>
+</div>
+</div>
+</div>
+<!-- Item #3 - Leo -->
+<div class="relative flex-none flex items-center group cursor-pointer">
+<svg class="w-28 h-48 -mr-6 z-0 select-none drop-shadow-2xl" viewBox="0 0 110 180">
+<text fill="#141414" font-family="'Space Grotesk', sans-serif" font-size="180" font-weight="700" stroke="#666" stroke-width="4" x="0" y="150">3</text>
+</svg>
+<div class="relative z-10 w-[160px] h-[240px] rounded-lg overflow-hidden shadow-2xl transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-2">
+<img class="w-full h-full object-cover" data-alt="Leo high octane action thriller poster in snowy Himachal mountains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz4f7q6oxRluwyd_CGw9ZcUBbols__F2i1-JJNDWiFmIz8mWajAZn314fiWMwIV2uCXoP0s1o82-jojwhvZWaqzkqPFDc7IL05JeydNk1XEPhTVmY902E0ypgwIsR7PQDVuOJ-3aopd2LDOq58pelGBExY8dgTst1zBmmOWTM59vj4uA_Z0Ic8UBer2N_06X3vRX3MA4HNMbof0W7E-cMHXPROnASP6kfYUM1g-MUbSp_V5KFhg4QaCQ">
+<div class="absolute top-2 right-2 bg-primary-container text-on-primary-container px-1 py-0.5 rounded font-label-badge text-label-badge font-bold">TOP 10</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-2">
+<div class="text-xs font-bold text-on-surface truncate">Leo</div>
+<div class="text-[10px] text-tertiary">Tamil • Multi-Audio</div>
+</div>
+</div>
+</div>
+<!-- Item #4 - Kalki 2898 AD -->
+<div class="relative flex-none flex items-center group cursor-pointer">
+<svg class="w-28 h-48 -mr-6 z-0 select-none drop-shadow-2xl" viewBox="0 0 110 180">
+<text fill="#141414" font-family="'Space Grotesk', sans-serif" font-size="180" font-weight="700" stroke="#666" stroke-width="4" x="0" y="150">4</text>
+</svg>
+<div class="relative z-10 w-[160px] h-[240px] rounded-lg overflow-hidden shadow-2xl transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-2">
+<img class="w-full h-full object-cover" data-alt="Kalki 2898 AD dystopian mythological sci fi vertical poster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqyxJHpg6FlzgtfXlUSmVEMf_W260APzxfII8reW504SZg_6GfQS-7YP7o_HjmHpQZNhy6wlOJ8sjmXDXinOEICq7ss0zDBjcnNtkF0PG-PQJebGubL3T7gIKOYYdJ7DMJl9LwmIGy-BoxGb_JHl0ZjNj0mBghRfXHuzar2VH5rJ7RBY89Y0cuexgOZZifmnaT2ABaB8ybgXbPXzNYhj2oPhyYVAGLYPpqjf6fHFZVIz1GbCLA3c_2mA">
+<div class="absolute top-2 right-2 bg-primary-container text-on-primary-container px-1 py-0.5 rounded font-label-badge text-label-badge font-bold">TOP 10</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-2">
+<div class="text-xs font-bold text-on-surface truncate">Kalki 2898 AD</div>
+<div class="text-[10px] text-tertiary">Telugu • IMAX 4K</div>
+</div>
+</div>
+</div>
+<!-- Item #5 - Kantara -->
+<div class="relative flex-none flex items-center group cursor-pointer">
+<svg class="w-28 h-48 -mr-6 z-0 select-none drop-shadow-2xl" viewBox="0 0 110 180">
+<text fill="#141414" font-family="'Space Grotesk', sans-serif" font-size="180" font-weight="700" stroke="#666" stroke-width="4" x="0" y="150">5</text>
+</svg>
+<div class="relative z-10 w-[160px] h-[240px] rounded-lg overflow-hidden shadow-2xl transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-2">
+<img class="w-full h-full object-cover" data-alt="Kantara coastal folk legend divine trance poster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBy_HrOMDYiLOYzfRAqNOptmPdEcc9fQos1UTufc-TYzOwiZZcfywf4TsKQt_OfxuoM_9X7ahVxsR7FRDSiva2T0xHhH8wQtxdU2LA-cOUgiSZjvogV7xJehXIq5emA7g-spjdYg7OzPfs-DptyBxPmtooRNSadtY9dnm_4x5P7Y72QrkSdwhLf9wIE5v2c5Zkk2hSTFmuRxDtNr-ebAoqvH0WBVkkS9lkZDWYOPWiYhWjE2SrdH5-YQ">
+<div class="absolute top-2 right-2 bg-primary-container text-on-primary-container px-1 py-0.5 rounded font-label-badge text-label-badge font-bold">TOP 10</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-2">
+<div class="text-xs font-bold text-on-surface truncate">Kantara</div>
+<div class="text-[10px] text-tertiary">Kannada • 5 Langs</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RAIL 2: TELUGU CINEMA SPOTLIGHTS (టాలీవుడ్ బ్లాక్‌బస్టర్స్) -->
+<section class="w-full flex flex-col gap-space-sm group/rail">
+<div class="flex items-center justify-between px-margin">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-wide flex items-center gap-space-xs">
+            Telugu Cinema Spotlights (టాలీవుడ్ బ్లాక్‌బస్టర్స్)
+            <span class="material-symbols-outlined text-secondary hover:text-on-surface cursor-pointer text-headline-sm transition-transform group-hover/rail:translate-x-1">chevron_right</span>
+</h2>
+<span class="font-label-md text-label-md text-secondary">Original Audio &amp; Multi-Dubs</span>
+</div>
+<div class="relative w-full">
+<button aria-label="Previous items" class="absolute left-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_back_ios</span>
+</button>
+<button aria-label="Next items" class="absolute right-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_forward_ios</span>
+</button>
+<div class="flex gap-gutter overflow-x-auto px-margin scrollbar-none py-space-sm">
+<!-- Pushpa 2: The Rule -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Pushpa 2 forest syndicate red sanders high drama action scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU04NHPWddec74nAXRs5c3vun8pCx-Wsh_TICpELEzJR_UYF-9TZoGs-2cRKQpnMjPzaDUlNcn9lpUiEauohwdRTTbeEcjrHqrP86h5EkMOL34SbOeO8NJsp6TN3WUuLyiJaZLZEJFfnq-CXq6d0OJisK5-DnVPvLJC4DgsfqpRuorSsOOtpk1U05ke9X0E9asp1SnaMKF-dXfIujQJjdeochHX9r4sJYtOKvaK9zWAHYkm7MYJoAWOQ">
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary-container px-1.5 py-0.5 rounded font-label-badge text-label-badge font-bold uppercase">Super Hit</span>
+<span class="absolute bottom-2 right-2 bg-surface-container-lowest/80 px-1.5 py-0.5 rounded text-[10px] font-semibold text-on-surface">Telugu [Orig]</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Pushpa 2: The Rule</h3>
+<span class="text-tertiary font-label-badge text-label-badge font-bold">99% Match</span>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-badge text-label-badge">
+<span>Action • Mass • Crime Saga</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface">U/A 16+</span>
+</div>
+</div>
+</div>
+<!-- Devara: Part 1 -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Devara stormy coastline epic clash" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2UY0_V71afmtX0UODMb-gN0wM2HeAeMLpo8b_-S9pbKhWoV7vJ_tGW6mo5YxtAAPJeY2GvAtHiQujU4fkmt8nXDG8rkQARhharC8fFOIU_weaCmbsrvVg-iB8ehG5AtPc6XOe1PoOrDsJgJeuAols5WHg3tw4VyeZtzYMdkOKVn82v2LG3LWWnty4-V00kXXXDo8YbBoHbB9AJAhBWHIIUMFlTjpFQiaOJ9gCJ8RjBPdMV6eBvfyfKw">
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary-container px-1.5 py-0.5 rounded font-label-badge text-label-badge font-bold uppercase">Trending #1</span>
+<span class="absolute bottom-2 right-2 bg-surface-container-lowest/80 px-1.5 py-0.5 rounded text-[10px] font-semibold text-on-surface">Atmos • 4K</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Devara</h3>
+<span class="text-tertiary font-label-badge text-label-badge font-bold">98% Match</span>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-badge text-label-badge">
+<span>Telugu • Coastal Action • Drama</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface">U/A 16+</span>
+</div>
+</div>
+</div>
+<!-- Guntur Kaaram -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Guntur Kaaram vibrant mass entertainment sequence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJDTqv2SpqiwtqPus0sARGEWg2goVaTUywSJM8Al32VyD2xWlXu885rRKozBLi6BFfg7nDCuVJkzCoXb7K8mSF1dQGnSKITs1CRrJlgE8iDcIVD6z3SBXWQNXrDD3UQE9QLvUqSP-fkxlD1S3hTLNg_XvBylL8vkX0BgcYiirwRuhr3jUfUljh34wcK8VEJXgg0YCujTUeovNBG_dmS5bq187zzqYia28vwS-j0zQ8Gxo01dBrWfdbUg">
+<span class="absolute bottom-2 right-2 bg-surface-container-lowest/80 px-1.5 py-0.5 rounded text-[10px] font-semibold text-on-surface">Telugu [Orig]</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Guntur Kaaram</h3>
+<span class="text-tertiary font-label-badge text-label-badge font-bold">94% Match</span>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-badge text-label-badge">
+<span>Telugu • Family • Action • Comedy</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface">U/A</span>
+</div>
+</div>
+</div>
+<!-- Hi Nanna -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Hi Nanna emotional heart touching drama visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArx0wy1pUZGb-uDYRek2Xn_TYGmaft2402l74zBdWQYMRRs_bgTLIo3AJj7iNGjBEzxKJoFDjPdbNTIj39ekR51QLmYGLI9JaMj0ayVIH_lbSqOrg0rdRKc5uxeiI5TwqiTnbb9UK5CRxuBMapXREOxWs-LUG6fOJzHaJFnBX5bAbbtvY-t_rZYdNpj-Eq_ZHyLYDy_kfE0yEzhQW9vHd2vb_smPCHpXeXxfAmqNz74jegW0l8zK78ng">
+<span class="absolute top-2 left-2 bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge font-bold">Critically Acclaimed</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Hi Nanna</h3>
+<span class="text-tertiary font-label-badge text-label-badge font-bold">97% Match</span>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-badge text-label-badge">
+<span>Emotional Drama • Romance • Family</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface">U</span>
+</div>
+</div>
+</div>
+<!-- Hanu-Man -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Hanu-Man indigenous superhero fantasy visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOgF9gLIso7k3G7ry-zvFoTqGdq11irmupvGzbnixBRm2KrfdBX3HelN4qSwHt31gQf_AmCs2B-2KAU1S-csoXagbn30XJK0y1znzqvP2F2Y8x7vm9pw2WSgLAViN8XROwf5-rwE8ztuhdvBTtvbpFd_tpO99M7msme9sw2prZhlYmtCvkjVzUTYVIZzAmhngNvywH-K7YO1h_TmMFiUXmGFBFAfn0RCnAKtCSSobCbi170Uprf_kbtg">
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary-container px-1.5 py-0.5 rounded font-label-badge text-label-badge font-bold uppercase">Blockbuster</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Hanu-Man</h3>
+<span class="text-tertiary font-label-badge text-label-badge font-bold">96% Match</span>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-badge text-label-badge">
+<span>Superhero • Mythological • Telugu</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface">U/A</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RAIL 3: TAMIL POWERHOUSE & ACTION (தமிழ் சினிமா) with Hover Preview State -->
+<section class="w-full flex flex-col gap-space-sm group/rail">
+<div class="flex items-center justify-between px-margin">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-wide flex items-center gap-space-xs">
+            Tamil Powerhouse &amp; Action (தமிழ் சினிமா)
+            <span class="material-symbols-outlined text-secondary hover:text-on-surface cursor-pointer text-headline-sm transition-transform group-hover/rail:translate-x-1">chevron_right</span>
+</h2>
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Kollywood Hits</span>
+</div>
+</div>
+<div class="relative w-full">
+<button aria-label="Previous items" class="absolute left-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_back_ios</span>
+</button>
+<button aria-label="Next items" class="absolute right-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_forward_ios</span>
+</button>
+<div class="flex gap-gutter overflow-x-auto px-margin scrollbar-none py-space-md">
+<!-- Card 1: Leo (Expanded State) -->
+<div class="relative flex-none w-[320px] z-20 transition-all duration-300">
+<div class="w-full bg-surface-container rounded-lg overflow-hidden shadow-2xl flex flex-col transform hover:-translate-y-1">
+<div class="relative aspect-video w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Leo intense bakery combat standoff in Kashmir" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVkKiKHiI6p8eRM5qsPEnmdrWIymAhCL7xF7sSMpnW6qbDbbY6Kcctk_73BMTpy-sxWuDh3E6N5npeb5F1RaVgaS30hQS4AJ2NDgHew65cmvTIqeW4qJ5hQ56LHLZwDYuaMcDFqrhu8joo45BO7YmcFCFrjYSsS-O7Cbcg5UEbNiwOUIpCCuIHQdyYGip8KusvM_IesXZnVXuozOSce7pAPMQX-aqQcdjvOYMAt47AA-ZeE14-ZyETOQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1.5">
+<span class="bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-badge text-label-badge font-bold uppercase">LCU Universe</span>
+</div>
+<div class="absolute bottom-2 right-2 bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge backdrop-blur-md">
+                    Tamil [Orig] • Telugu • Hindi
+                  </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<button class="w-9 h-9 rounded-full bg-on-surface hover:bg-on-surface/90 text-surface-container-lowest flex items-center justify-center shadow cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container-highest hover:bg-surface-bright text-on-surface flex items-center justify-center cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container-highest hover:bg-surface-bright text-on-surface flex items-center justify-center cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-sm">thumb_up</span>
+</button>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-highest hover:bg-surface-bright text-on-surface flex items-center justify-center cursor-pointer" title="Full Details" type="button">
+<span class="material-symbols-outlined text-headline-sm">expand_more</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm pt-1">
+<span class="text-tertiary font-label-md text-label-md font-bold">98% Match</span>
+<span class="bg-surface-variant text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge font-semibold">U/A 16+</span>
+<span class="text-on-surface font-label-md text-label-md">2h 44m</span>
+<span class="bg-surface-variant text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge font-semibold">4K Atmos</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Leo</h4>
+<div class="flex items-center gap-1.5 font-label-badge text-label-badge text-secondary">
+<span>Action Thriller</span>
+<span>•</span>
+<span>Cartel</span>
+<span>•</span>
+<span>Lokesh Kanagaraj</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Jailer -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Jailer Rajinikanth vintage action swag" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCILMLWnHE-zCQmOhultv28rVJ99gReH_G2--zk9fRdDVn8fXX4XubimgfVRfDYpKIAIAb6-2DhznOk9LwYJ5z2II9uZ_K_F760rVrbUbUiSBeDwIE-8BBQyKKd23unYYAOsWIetGJLetMoiZNkxBjF-ZQmty4Q937dFVFvFWT0UmV1YpP9U7O3qUYotAglpeBCs-LgmE_rgun5roVh4cKhzTmO29UelernbyuayI5k0GdMRh8fONpPPA">
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary-container px-1.5 py-0.5 rounded font-label-badge text-label-badge font-bold uppercase">Mega Blockbuster</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-md text-label-md font-bold">97% Match</span>
+<span class="bg-surface-variant text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">U/A 16+</span>
+</div>
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Jailer</h3>
+<p class="font-label-badge text-label-badge text-secondary">Tamil • Action Comedy • Mass Thriller</p>
+</div>
+</div>
+<!-- Card 3: Vikram -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Vikram Kamal Haasan black ops syndicate showdown" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7QCASrIR5xVztmZcxJlvfkg1yAKCI5OtM6SQbaR4sBouniqfuqBy6L60znT7Y2WqF_jSGLFtbXLpd-iwXUUPGDFXrxR2iF-p6PVJ5OoHvwNka5tS3Xbh24nD6LJCidbABzWtNlARvN0RGv90VnNE4PZepbmt3_1QOEBUrDaqmCgqj-ZHbXnjgz6wNWnC2RI3LWmFI9uPty_zbeYE3Km2ma7mZQwiHZug6tX2tEQ60B5AR559Ki0p4yQ">
+<span class="absolute top-2 left-2 bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">LCU Masterpiece</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-md text-label-md font-bold">99% Match</span>
+<span class="bg-surface-variant text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">U/A 16+</span>
+</div>
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Vikram</h3>
+<p class="font-label-badge text-label-badge text-secondary">Tamil • Spy Noir • Gripping</p>
+</div>
+</div>
+<!-- Card 4: Ponniyin Selvan -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Ponniyin Selvan historical imperial Chola period drama" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzhMaUQWaMZbjw50FKZEIjMJEhFWiJ17mcOjYc9HiX74UljWNxvPWUekebvK5TI8CfcUsSNO73hXoEBo5mjo0F_8nZumzvATh6TY9iAmgj_VF32sT2wfw7h4DvInLM1vepoVmEcQP7w0po9YM78V1AZWtd9a-VlDHQvqcvKjxCJOVeSbnoAitTNKy0Uv2lVy6l2Mjm6DchFNjTnyI211bktTd4jGI0JQz3t2EpiKTo30939Rl0TZd9IA">
+<span class="absolute top-2 left-2 bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">Mani Ratnam Classic</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-md text-label-md font-bold">95% Match</span>
+<span class="bg-surface-variant text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">U/A</span>
+</div>
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Ponniyin Selvan</h3>
+<p class="font-label-badge text-label-badge text-secondary">Historical • Royal Drama • Tamil</p>
+</div>
+</div>
+<!-- Card 5: Captain Miller -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Captain Miller colonial rebellion explosive combat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHuYdz4RjOkXkujFZ1Egum3yVKm2RGT5yXz7pbsYJvMcybJXUEnEkdqx70ZpP16QpOErEx8vDINZiiG8bd8c5uh2NOQ3Ztm3Ko2esEyc0DOnFMek0az0zX5MwHRnkaTtbkxqI-irs8Oz8mblaVQzLRIRv4W463IUdJah4MoVKWDquiRJlWHMCL32PIoJz-L2-oCVILUTtY8Mgi3GbMDryqXtRpqKgmU9YRo4smK8Iq7_UFwQ9LnP7-Aw">
+<span class="absolute top-2 left-2 bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">High Octane</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-md text-label-md font-bold">93% Match</span>
+<span class="bg-surface-variant text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">U/A 16+</span>
+</div>
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Captain Miller</h3>
+<p class="font-label-badge text-label-badge text-secondary">Period Action • Rebel Saga</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RAIL 4: KANNADA BLOCKBUSTERS & MASTERPIECES (ಕನ್ನಡ ಚಿತ್ರರಂಗ) -->
+<section class="w-full flex flex-col gap-space-sm group/rail">
+<div class="flex items-center justify-between px-margin">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-wide flex items-center gap-space-xs">
+            Kannada Blockbusters &amp; Masterpieces (ಕನ್ನಡ ಚಿತ್ರರಂಗ)
+            <span class="material-symbols-outlined text-secondary hover:text-on-surface cursor-pointer text-headline-sm transition-transform group-hover/rail:translate-x-1">chevron_right</span>
+</h2>
+<span class="font-label-md text-label-md text-secondary hover:text-on-surface cursor-pointer">Sandalwood Hits</span>
+</div>
+<div class="relative w-full">
+<button aria-label="Previous items" class="absolute left-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_back_ios</span>
+</button>
+<button aria-label="Next items" class="absolute right-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_forward_ios</span>
+</button>
+<div class="flex gap-gutter overflow-x-auto px-margin scrollbar-none py-space-sm">
+<!-- Item 1: Kantara -->
+<div class="relative flex-none w-[260px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer">
+<div class="aspect-video w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Kantara divine forest ritual campfire dance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfpuNohsDqjiYl6qEtuBo3L_dOsTXazmB9Y4sENCBvU8ZgVZpZxK69YiSXORs5H0UBnK2zK5OaWx5MpUycUXeIHm2vbdqa0c6m37Zeq5eh29u0RI4vB7Ih7ufJXob_QarC-fhj0Zygy8ugpazqpEniuLgaWaAdmsajzwjFEJqmfw3UW3vaYodb-z-Z3TOJwisgHNVvOAc1o3g0V26SHn2MDdyySXyp-AEFrLni1b_xnvQV-dhloNzLmw">
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-badge text-label-badge font-bold">99% Match</span>
+<span class="text-secondary font-label-badge text-label-badge">Kannada [Orig]</span>
+</div>
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Kantara</h3>
+<div class="flex items-center gap-1 font-label-badge text-label-badge text-secondary">
+<span class="bg-surface-variant px-1 rounded">HDR</span>
+<span class="bg-surface-variant px-1 rounded">Atmos</span>
+<span class="truncate ml-1">Folklore • Action</span>
+</div>
+</div>
+</div>
+<!-- Item 2: K.G.F: Chapter 2 -->
+<div class="relative flex-none w-[260px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer">
+<div class="aspect-video w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="KGF Chapter 2 Rocky Bhai machine gun sequence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-qWKCcjsHxNFEUW5CqeDUz7mhkjPsJSC9JjKhCegdbIn0-eIw2twmXtAXrNmLT2cLqsmoEY8DakbAHUsz8ZoCoBxg7JxYGDmryGh4WiN2udRnK0OKvXyDqzqDnw5DIhD2kGjeT1jVjh3GgDAyofAdIhRvI80DkVewB-0WGSnuX9NU_fHEwB8msqjV17NX54I5azH54pVtziNCHuwh9Y-GOYzqc9grft2ctQEFx2EOKWHBa5Gnsh_b3w">
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-badge text-label-badge font-bold">98% Match</span>
+<span class="text-secondary font-label-badge text-label-badge">2h 48m</span>
+</div>
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">K.G.F: Chapter 2</h3>
+<div class="flex items-center gap-1 font-label-badge text-label-badge text-secondary">
+<span class="bg-surface-variant px-1 rounded">4K</span>
+<span class="bg-surface-variant px-1 rounded">5.1</span>
+<span class="truncate ml-1">Period Gangster</span>
+</div>
+</div>
+</div>
+<!-- Item 3: 777 Charlie -->
+<div class="relative flex-none w-[260px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer">
+<div class="aspect-video w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="777 Charlie heartwarming dog journey across India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAthcAN0KexXrPKJDEpwCCsT3-1-Rze4GgJS_wv7-9XUxZrTJSJPJuOkmNHN-jqU_jZQoSMwgOmiEFFRTzV1pNwDkwmAUb-1uCJeIYvFAcGIBj7EzbjeaFADEs-Em2HoSV6kK9lwsC7SyoIJsnrTsi7bWiLUSaJU1M8dhRG2ThOR0VECMh_72CS3SB8c1XfArsf7XkGXuZMtgfr-ilILcCdOJnqE7rgzm4gAWnXucEWifQKclLb-88Ag">
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-badge text-label-badge font-bold">97% Match</span>
+<span class="text-secondary font-label-badge text-label-badge">2h 44m</span>
+</div>
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">777 Charlie</h3>
+<div class="flex items-center gap-1 font-label-badge text-label-badge text-secondary">
+<span class="bg-surface-variant px-1 rounded">HD</span>
+<span class="truncate ml-1">Adventure • Emotional</span>
+</div>
+</div>
+</div>
+<!-- Item 4: Sapta Sagaradaache Ello -->
+<div class="relative flex-none w-[260px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer">
+<div class="aspect-video w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Sapta Sagaradaache Ello deep melancholic ocean love story" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR7HNgkGYGO7YbqbsZcYJGCChKTiXvAVbKQhvFbIrYjIKYBgh7TUT1oyOwy-oT3leffgu4snioPox2d_voNHKNty6ERVxCSPeTG0HSEvfFhP-7pVaSDiafyvKYrMtsDAEMWnCzu5Ix8jXAkR_cJVIuzGJkiuxbf2lOh1vXjbVo-BfaceYr1I281Jxz6tiepM2dK7Yf9YTc6CqKJwF9_KCLxZIUC9YAXLizwe5ehcQTyhxZqUhsvqPpDw">
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-badge text-label-badge font-bold">96% Match</span>
+<span class="text-secondary font-label-badge text-label-badge">Side A &amp; B</span>
+</div>
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Sapta Sagaradaache Ello</h3>
+<div class="flex items-center gap-1 font-label-badge text-label-badge text-secondary">
+<span class="bg-surface-variant px-1 rounded">5.1</span>
+<span class="truncate ml-1">Romantic Drama</span>
+</div>
+</div>
+</div>
+<!-- Item 5: Vikrant Rona -->
+<div class="relative flex-none w-[260px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer">
+<div class="aspect-video w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Vikrant Rona rain drenched mysterious jungle thriller" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArlrSgbfcFXNT5B4qipPlYUMJsAbVbwld9ybdTU74VVi4jErHuwvqbOdIkTxPWtOUtxrTfdN8ErV8Ij0eK55LNsg-hlLZGh5hZ265Ct2TWACMmiDp7CLpvpGHqU618auahXtY-T4HGquAo1NRAZl8L16VC_QJiUnfA81y2DNouNoJhjn8CU2JW0ni5lyM-8nJyz4FmTgq_li0kJg7LSgDUDbSh3whfrjIURqlM0h4DAuJntydwV6eeKg">
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-badge text-label-badge font-bold">92% Match</span>
+<span class="text-secondary font-label-badge text-label-badge">2h 28m</span>
+</div>
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Vikrant Rona</h3>
+<div class="flex items-center gap-1 font-label-badge text-label-badge text-secondary">
+<span class="bg-surface-variant px-1 rounded">4K</span>
+<span class="truncate ml-1">Fantasy • Mystery</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RAIL 5: HOLLYWOOD IN INDIA (English & Multi-Audio Dubs) -->
+<section class="w-full flex flex-col gap-space-sm group/rail">
+<div class="flex items-center justify-between px-margin">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-wide flex items-center gap-space-xs">
+            Hollywood in India (English &amp; Multi-Audio Dubs)
+            <span class="material-symbols-outlined text-secondary hover:text-on-surface cursor-pointer text-headline-sm transition-transform group-hover/rail:translate-x-1">chevron_right</span>
+</h2>
+<span class="font-label-md text-label-md text-secondary">Hindi • Tamil • Telugu Dubs</span>
+</div>
+<div class="relative w-full">
+<button aria-label="Previous items" class="absolute left-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_back_ios</span>
+</button>
+<button aria-label="Next items" class="absolute right-0 top-0 bottom-0 z-30 w-12 bg-surface-container-lowest/70 hover:bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface opacity-0 group-hover/rail:opacity-100 flex items-center justify-center transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-md">arrow_forward_ios</span>
+</button>
+<div class="flex gap-gutter overflow-x-auto px-margin scrollbar-none py-space-sm">
+<!-- Oppenheimer -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Oppenheimer atomic test spectacle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU0xZ-MqEc5r63SPeVaAork4FniikGmNOXdV--POw_vyeEwOIc92FJXsPudgwN2Ie3eT_TF51hqijjzBDvdYBDMeX8uoG9fLnpctui6ZDXOW6DgSztcV7cY9xQgB4I4Mgd7XWY734YIrcOUbeCHyaemiOasgQ2QT1HsrnqQ22_GJ4aDrkq6wZpuo7332EBhBupuPXl2qGF6S90e65ck1vjPOnSH8lKD2cs3tTmNZA4iiw4Pqu0bXUpzQ">
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary-container px-1.5 py-0.5 rounded font-label-badge text-label-badge font-bold uppercase">Oscar Winner</span>
+<span class="absolute bottom-2 right-2 bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">English • Hindi</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Oppenheimer</h3>
+<span class="text-tertiary font-label-badge text-label-badge font-bold">99% Match</span>
+</div>
+<p class="font-label-badge text-label-badge text-secondary">Historical Drama • Nolan • 4K UHD</p>
+</div>
+</div>
+<!-- Dune: Part Two -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Dune Part Two desert warfare sandworm charge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVkKiKHiI6p8eRM5qsPEnmdrWIymAhCL7xF7sSMpnW6qbDbbY6Kcctk_73BMTpy-sxWuDh3E6N5npeb5F1RaVgaS30hQS4AJ2NDgHew65cmvTIqeW4qJ5hQ56LHLZwDYuaMcDFqrhu8joo45BO7YmcFCFrjYSsS-O7Cbcg5UEbNiwOUIpCCuIHQdyYGip8KusvM_IesXZnVXuozOSce7pAPMQX-aqQcdjvOYMAt47AA-ZeE14-ZyETOQ">
+<span class="absolute top-2 left-2 bg-surface-variant/90 text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge font-bold uppercase">IMAX Enhanced</span>
+<span class="absolute bottom-2 right-2 bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">Multi-Audio</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Dune: Part Two</h3>
+<span class="text-tertiary font-label-badge text-label-badge font-bold">98% Match</span>
+</div>
+<p class="font-label-badge text-label-badge text-secondary">Epic Sci-Fi • Tamil • Telugu • Hindi</p>
+</div>
+</div>
+<!-- Deadpool & Wolverine -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Deadpool and Wolverine explosive multiverse team-up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCILMLWnHE-zCQmOhultv28rVJ99gReH_G2--zk9fRdDVn8fXX4XubimgfVRfDYpKIAIAb6-2DhznOk9LwYJ5z2II9uZ_K_F760rVrbUbUiSBeDwIE-8BBQyKKd23unYYAOsWIetGJLetMoiZNkxBjF-ZQmty4Q937dFVFvFWT0UmV1YpP9U7O3qUYotAglpeBCs-LgmE_rgun5roVh4cKhzTmO29UelernbyuayI5k0GdMRh8fONpPPA">
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary-container px-1.5 py-0.5 rounded font-label-badge text-label-badge font-bold uppercase">Global Hit</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Deadpool &amp; Wolverine</h3>
+<span class="text-tertiary font-label-badge text-label-badge font-bold">97% Match</span>
+</div>
+<p class="font-label-badge text-label-badge text-secondary">Superhero • Comedy • Multi-Lang</p>
+</div>
+</div>
+<!-- Avatar: The Way of Water -->
+<div class="relative flex-none w-[280px] bg-surface-container rounded-lg overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-105">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Pandora deep ocean bioluminescent exploration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOgF9gLIso7k3G7ry-zvFoTqGdq11irmupvGzbnixBRm2KrfdBX3HelN4qSwHt31gQf_AmCs2B-2KAU1S-csoXagbn30XJK0y1znzqvP2F2Y8x7vm9pw2WSgLAViN8XROwf5-rwE8ztuhdvBTtvbpFd_tpO99M7msme9sw2prZhlYmtCvkjVzUTYVIZzAmhngNvywH-K7YO1h_TmMFiUXmGFBFAfn0RCnAKtCSSobCbi170Uprf_kbtg">
+<span class="absolute bottom-2 right-2 bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded font-label-badge text-label-badge">Dolby Vision</span>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-label-lg text-on-surface font-semibold truncate">Avatar: The Way of Water</h3>
+<span class="text-tertiary font-label-badge text-label-badge font-bold">96% Match</span>
+</div>
+<p class="font-label-badge text-label-badge text-secondary">Sci-Fi Epic • Hindi • Tamil • Telugu</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURE BANNER INTERSTITIAL: CINEWOOD INDIA EXPERIENCE -->
+<section class="mx-margin rounded-xl overflow-hidden bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-space-lg shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md border border-surface-container-highest/50">
+<div class="flex items-center gap-space-lg">
+<div class="w-14 h-14 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-headline-lg">live_tv</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary font-bold">Cinewood India Experience</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Stream in 4K with Dolby Vision &amp; Regional Audio</h3>
+<p class="font-body-sm text-body-sm text-secondary max-w-2xl">
+              Enjoy tailored regional sound stages in Telugu, Tamil, Kannada, Malayalam, and English with ultra-low latency streams across smart TVs, mobile devices, and home theaters.
+            </p>
+</div>
+</div>
+<button class="shrink-0 px-space-md py-space-sm bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg rounded-lg transition-colors cursor-pointer shadow font-bold" type="button">
+          Select Audio &amp; Subtitles
+        </button>
+</section>
+</div>
+<!-- Client-side Interactive Behaviors -->
+<script>
+      (function() {
+        // Sound Toggle Micro-Interaction
+        const soundBtn = document.getElementById('hero-sound-toggle');
+        if (soundBtn) {
+          let muted = true;
+          soundBtn.addEventListener('click', () => {
+            muted = !muted;
+            soundBtn.innerHTML = muted 
+              ? '<span class="material-symbols-outlined text-headline-sm">volume_off</span>' 
+              : '<span class="material-symbols-outlined text-headline-sm">volume_up</span>';
+          });
+        }
+
+        // Smooth Horizontal Scroll Buttons for Content Rails
+        document.querySelectorAll('section.group\\/rail').forEach(rail => {
+          const scrollArea = rail.querySelector('.overflow-x-auto');
+          const prevBtn = rail.querySelector('button[aria-label="Previous items"]');
+          const nextBtn = rail.querySelector('button[aria-label="Next items"]');
+
+          if (scrollArea && prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => {
+              scrollArea.scrollBy({ left: -600, behavior: 'smooth' });
+            });
+            nextBtn.addEventListener('click', () => {
+              scrollArea.scrollBy({ left: 600, behavior: 'smooth' });
+            });
+          }
+        });
+      })();
+    </script>
+</div>
+</main>
+<!-- FOOTER WITH INDIAN REGULATORY & REGIONAL COMPLIANCE LINKS -->
+<footer class="w-full bg-surface-container-lowest text-on-secondary-container mt-space-xl border-t border-surface-container">
+<div class="w-full max-w-7xl mx-auto px-margin py-space-xl">
+<div class="flex items-center gap-space-lg mb-space-lg text-on-surface">
+<button aria-label="Facebook" class="hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined">public</span></button>
+<button aria-label="Instagram" class="hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined">photo_camera</span></button>
+<button aria-label="Twitter" class="hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined">chat</span></button>
+<button aria-label="YouTube" class="hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined">smart_display</span></button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md font-body-sm text-body-sm mb-space-lg">
+<div class="flex flex-col gap-space-sm">
+<a class="hover:underline" href="#">Content Advisory (India)</a>
+<a class="hover:underline" href="#">Investor Relations</a>
+<a class="hover:underline" href="#">Legal Notices</a>
+</div>
+<div class="flex flex-col gap-space-sm">
+<a class="hover:underline" href="#">Grievance Redressal Officer (India)</a>
+<a class="hover:underline" href="#">Help Center</a>
+<a class="hover:underline" href="#">Cookie Preferences</a>
+</div>
+<div class="flex flex-col gap-space-sm">
+<a class="hover:underline" href="#">Terms of Use</a>
+<a class="hover:underline" href="#">Corporate Information</a>
+<a class="hover:underline" href="#">Gift Cards &amp; UPI Recharge</a>
+</div>
+<div class="flex flex-col gap-space-sm">
+<a class="hover:underline" href="#">Media Center</a>
+<a class="hover:underline" href="#">Privacy Statement</a>
+<a class="hover:underline" href="#">Contact Us (Bengaluru &amp; Mumbai)</a>
+</div>
+</div>
+<div class="mb-space-lg flex items-center gap-4">
+<button class="font-label-md text-label-md px-space-sm py-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface rounded transition-colors" type="button">Service Code</button>
+<span class="text-xs text-secondary">India (English / हिन्दी / తెలుగు / தமிழ்)</span>
+</div>
+<p class="font-label-badge text-label-badge text-on-secondary-container">© 1997-2025 Cinewood India Pvt. Ltd. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>

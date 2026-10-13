@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="100%" height="100%">
+  <defs>
+    <!-- Netflix-style subtle arc path for the text -->
+    <path id="curvePath" d="M 30,125 Q 300,105 570,125" />
+    <filter id="cinematicGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <style>
+    .netflix-wordmark {
+      font-family: 'Bebas Neue', 'Impact', 'Arial Black', sans-serif;
+      font-weight: 900;
+      font-size: 88px;
+      letter-spacing: 5px;
+      fill: #E50914;
+      text-anchor: middle;
+      filter: url(#cinematicGlow);
+    }
+  </style>
+  <!-- Background transparent -->
+  <!-- Authentic Netflix curved arch wordmark using path / vector representation -->
+  <g transform="translate(0, 10)">
+    <!-- Fallback/direct styled glyphs matching the Netflix arch geometry -->
+    <text class="netflix-wordmark">
+      <textPath href="#curvePath" startOffset="50%">CINEWOOD</textPath>
+    </text>
+  </g>
+</svg>
