@@ -1,6 +1,5 @@
 # CineWood 🎬 — Premium Indian & International Streaming Platform
 
-![CineWood Banner]("C:\Users\ADMIN\Pictures\a_wide_minimalist_dark_graphic_logo_scene_a_soli.png")
 
 > **CineWood** is an enterprise-grade, full-stack OTT video streaming web application modeled after Netflix and crafted specifically for the diverse Indian cinematic landscape alongside global cinema. It delivers high-octane blockbusters and series across **Telugu, Tamil, Kannada, Hindi, Malayalam, and English** with a luxury "Cinematic Dark" aesthetic, adaptive HLS video streaming, automated watch-progress tracking, post-completion interactive feedback, live Razorpay payment processing, and a comprehensive administrative management console.
 
