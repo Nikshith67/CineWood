@@ -1,5 +1,4 @@
 package com.cinewood.controller;
-
 import com.cinewood.entity.PaymentTransaction;
 import com.cinewood.entity.User;
 import com.cinewood.repository.UserRepository;
@@ -14,11 +13,15 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1/payments")
-@RequiredArgsConstructor
 public class PaymentController {
 
     private final PaymentService paymentService;
     private final UserRepository userRepository;
+
+    public PaymentController(PaymentService paymentService, UserRepository userRepository) {
+        this.paymentService = paymentService;
+        this.userRepository = userRepository;
+    }
 
     @Getter @Setter
     @NoArgsConstructor @AllArgsConstructor

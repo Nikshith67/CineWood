@@ -60,8 +60,8 @@ export default function FeedbackModal({ movie, profileId, onClose, onSubmitted }
         onSubmitted?.();
         onClose();
       }, 2000);
-    } catch (err) {
-      console.error('Failed to submit feedback:', err);
+    } catch {
+      // Feedback submission failed silently
     } finally {
       setSubmitting(false);
     }

@@ -33,8 +33,8 @@ export function WatchlistProvider({ children }) {
       } else {
         setLikedIds([]);
       }
-    } catch (err) {
-      console.error('Failed to load watchlist/likes:', err);
+    } catch {
+      // Silently handle corrupt localStorage data
     }
   }, [profileKey]);
 
@@ -73,8 +73,8 @@ export function WatchlistProvider({ children }) {
       setMyList(updated);
       try {
         localStorage.setItem(`${profileKey}_watchlist`, JSON.stringify(updated));
-      } catch (e) {
-        console.error('Failed saving watchlist:', e);
+      } catch {
+        // localStorage write failed (quota exceeded or private mode)
       }
       return added;
     },
@@ -89,8 +89,8 @@ export function WatchlistProvider({ children }) {
       setMyList(updated);
       try {
         localStorage.setItem(`${profileKey}_watchlist`, JSON.stringify(updated));
-      } catch (e) {
-        console.error('Failed saving watchlist:', e);
+      } catch {
+        // localStorage write failed
       }
       showToast('Removed from My List');
     },
@@ -125,8 +125,8 @@ export function WatchlistProvider({ children }) {
       setLikedIds(updated);
       try {
         localStorage.setItem(`${profileKey}_likes`, JSON.stringify(updated));
-      } catch (e) {
-        console.error('Failed saving likes:', e);
+      } catch {
+        // localStorage write failed
       }
       return nowLiked;
     },

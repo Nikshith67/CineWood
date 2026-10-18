@@ -6,7 +6,7 @@ export default function VideoPlayer({ movie, onClose, onComplete, profileId }) {
   const [playing, setPlaying] = useState(true);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(1);
+  const [volume] = useState(1);
   const [muted, setMuted] = useState(false);
   const [fullscreen, setFullscreen] = useState(false);
   const [showControls, setShowControls] = useState(true);
@@ -48,8 +48,9 @@ export default function VideoPlayer({ movie, onClose, onComplete, profileId }) {
 
   const togglePlay = () => {
     const video = videoRef.current;
+    if (!video) return;
     if (video.paused) {
-      video.play();
+      video.play().catch(() => {});
       setPlaying(true);
     } else {
       video.pause();
@@ -59,29 +60,32 @@ export default function VideoPlayer({ movie, onClose, onComplete, profileId }) {
 
   const handleTimeUpdate = () => {
     const video = videoRef.current;
+    if (!video) return;
     setCurrentTime(video.currentTime);
     setDuration(video.duration || 0);
   };
 
   const handleSeek = (e) => {
     const video = videoRef.current;
+    if (!video) return;
     const rect = e.currentTarget.getBoundingClientRect();
     const pos = (e.clientX - rect.left) / rect.width;
-    video.currentTime = pos * video.duration;
+    video.currentTime = pos * (video.duration || 0);
   };
 
   const toggleMute = () => {
     const video = videoRef.current;
+    if (!video) return;
     video.muted = !video.muted;
     setMuted(video.muted);
   };
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
-      containerRef.current?.requestFullscreen();
+      containerRef.current?.requestFullscreen?.();
       setFullscreen(true);
     } else {
-      document.exitFullscreen();
+      document.exitFullscreen?.();
       setFullscreen(false);
     }
   };
@@ -153,10 +157,10 @@ export default function VideoPlayer({ movie, onClose, onComplete, profileId }) {
               </button>
 
               {/* Skip buttons */}
-              <button onClick={() => { videoRef.current.currentTime -= 10; }} className="text-white hover:text-white/80">
+              <button onClick={() => { if (videoRef.current) videoRef.current.currentTime -= 10; }} className="text-white hover:text-white/80">
                 <span className="material-symbols-outlined">replay_10</span>
               </button>
-              <button onClick={() => { videoRef.current.currentTime += 10; }} className="text-white hover:text-white/80">
+              <button onClick={() => { if (videoRef.current) videoRef.current.currentTime += 10; }} className="text-white hover:text-white/80">
                 <span className="material-symbols-outlined">forward_10</span>
               </button>
 

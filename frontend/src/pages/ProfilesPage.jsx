@@ -32,8 +32,8 @@ export default function ProfilesPage() {
     try {
       const res = await getProfiles(user.userId);
       setProfiles(res.data);
-    } catch (err) {
-      console.error('Failed to load profiles:', err);
+    } catch {
+      // Failed to load profiles
     } finally {
       setLoading(false);
     }
@@ -57,8 +57,8 @@ export default function ProfilesPage() {
       setIsKids(false);
       setShowCreate(false);
       await loadProfiles();
-    } catch (err) {
-      console.error('Failed to create profile:', err);
+    } catch {
+      // Failed to create profile
     } finally {
       setCreating(false);
     }

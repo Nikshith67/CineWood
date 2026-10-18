@@ -22,8 +22,8 @@ export default function SettingsPage() {
     try {
       const res = await getProfiles(user.userId);
       setProfiles(res.data);
-    } catch (err) {
-      console.error('Failed to load profiles:', err);
+    } catch {
+      // Failed to load profiles
     } finally {
       setLoading(false);
     }
@@ -38,8 +38,8 @@ export default function SettingsPage() {
         selectProfile(null);
       }
       await loadProfiles();
-    } catch (err) {
-      console.error('Failed to delete profile:', err);
+    } catch {
+      // Failed to delete profile
     }
   };
 

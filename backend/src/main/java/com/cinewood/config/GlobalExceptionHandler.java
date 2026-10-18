@@ -64,10 +64,10 @@ public class GlobalExceptionHandler {
         String msg = ex.getMostSpecificCause().getMessage();
         if (msg != null && msg.toLowerCase().contains("duplicate")) {
             return ResponseEntity.status(HttpStatus.CONFLICT)
-                    .body(ErrorDto.of(409, "A record with that data already exists: " + msg));
+                    .body(ErrorDto.of(409, "A record with that data already exists"));
         }
         return ResponseEntity.badRequest()
-                .body(ErrorDto.of(400, "Data integrity error: " + msg));
+                .body(ErrorDto.of(400, "Data integrity error"));
     }
 
     @ExceptionHandler(RuntimeException.class)
@@ -88,13 +88,13 @@ public class GlobalExceptionHandler {
 
         log.error("Unexpected runtime error: {}", ex.getMessage(), ex);
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body(ErrorDto.of(500, "Server error: " + ex.getMessage()));
+                .body(ErrorDto.of(500, "An unexpected error occurred. Please try again later."));
     }
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorDto> handleGenericException(Exception ex) {
         log.error("Unhandled exception: {}", ex.getMessage(), ex);
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body(ErrorDto.of(500, "Server error: " + ex.getMessage()));
+                .body(ErrorDto.of(500, "An unexpected error occurred. Please try again later."));
     }
 }

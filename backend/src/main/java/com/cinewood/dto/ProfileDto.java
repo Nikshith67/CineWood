@@ -16,6 +16,7 @@ public class ProfileDto {
 
     @Getter @Setter
     @NoArgsConstructor @AllArgsConstructor
+    @Builder
     public static class ProfileRequest {
         private String profileName;
         private String avatarUrl;

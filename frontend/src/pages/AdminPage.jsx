@@ -49,8 +49,8 @@ export default function AdminPage() {
       setLoading(true);
       const res = await adminGetAllMedia();
       setMedia(res.data);
-    } catch (err) {
-      console.error('Failed to load media:', err);
+    } catch {
+      // Failed to load media
     } finally {
       setLoading(false);
     }
@@ -60,8 +60,8 @@ export default function AdminPage() {
     try {
       const res = await adminGetAllUsers();
       setUsers(res.data);
-    } catch (err) {
-      console.error('Failed to load users:', err);
+    } catch {
+      // Failed to load users
     }
   }, []);
 
@@ -69,8 +69,8 @@ export default function AdminPage() {
     try {
       const res = await getPaymentTransactions();
       setTransactions(res.data || []);
-    } catch (err) {
-      console.error('Failed to load transactions:', err);
+    } catch {
+      // Failed to load transactions
     }
   }, []);
 
@@ -138,8 +138,8 @@ export default function AdminPage() {
       await adminDeleteMedia(id);
       setDeleteConfirm(null);
       await loadMedia();
-    } catch (err) {
-      console.error('Failed to delete media:', err);
+    } catch {
+      // Failed to delete media
     }
   };
 

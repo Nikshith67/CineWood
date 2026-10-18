@@ -6,6 +6,7 @@
 @set "WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain"
 @set "MVNW_BASEDIR=%~dp0."
 
+@if exist "C:\Program Files\Java\jdk-21.0.12" set "JAVA_HOME=C:\Program Files\Java\jdk-21.0.12"
 @set "MAVEN_CMD=java"
 @if not "%JAVA_HOME%"=="" set "MAVEN_CMD=%JAVA_HOME%\bin\java"
 

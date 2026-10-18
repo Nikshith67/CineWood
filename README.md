@@ -2,7 +2,19 @@
 
 ![CineWood Banner](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1600&auto=format&fit=crop&q=80)
 
-> **CineWood** is an enterprise-grade, full-stack OTT video streaming web application modeled after Netflix and built specifically for the vibrant Indian cinematic landscape. It delivers high-octane blockbusters and series across **Telugu, Tamil, Kannada, Hindi, Malayalam, and English** with a luxury "Cinematic Dark" aesthetic, adaptive HLS video streaming, automated watch-progress tracking, post-completion feedback, live Razorpay payment processing, and a robust administrative console.
+> **CineWood** is an enterprise-grade, full-stack OTT video streaming web application modeled after Netflix and crafted specifically for the diverse Indian cinematic landscape alongside global cinema. It delivers high-octane blockbusters and series across **Telugu, Tamil, Kannada, Hindi, Malayalam, and English** with a luxury "Cinematic Dark" aesthetic, adaptive HLS video streaming, automated watch-progress tracking, post-completion interactive feedback, live Razorpay payment processing, and a comprehensive administrative management console.
+
+---
+
+> [!NOTE]
+> **Media Delivery & Content Strategy**:
+> CineWood utilizes high-definition promotional media, official trailers, and open CDN HLS (`.m3u8`) test streams (10–80 seconds in duration) rather than storing full-length 2-hour movies. 
+> 
+> **Why?**
+> 1. **Protocol Parity**: HTTP Live Streaming (HLS) delivers media via 2–6 second chunked segments (`.ts`/`.m4s`). Whether a title is 60 seconds or 2 hours, the player buffering, adaptive bitrate heuristics, and playback tracking operate identically.
+> 2. **Engineering Focus**: Avoids multi-terabyte storage overhead and commercial CDN egress costs while proving the complete end-to-end full-stack streaming pipeline.
+> 3. **Copyright & DRM Compliance**: Full-length commercial feature film distribution requires studio licensing and hardware DRM (Widevine/FairPlay), which is legally restricted to commercial OTT distributors.
+> *See [Media Delivery & Video Length Rationale](#-media-delivery--video-length-rationale) for the detailed architectural breakdown.*
 
 ---
 
@@ -11,21 +23,25 @@
 1. [Architectural Overview](#-architectural-overview)
 2. [Technology Stack](#-technology-stack)
 3. [Key Features](#-key-features)
-4. [System Architecture & Data Flow](#-system-architecture--data-flow)
-5. [Database Schema & Entities](#-database-schema--entities)
-6. [API Reference](#-api-reference)
-7. [Default Seeded Accounts & Content](#-default-seeded-accounts--content)
-8. [Getting Started & Local Setup](#-getting-started--local-setup)
-9. [Configuration & Environment Variables](#-configuration--environment-variables)
-10. [Folder Structure](#-folder-structure)
-11. [Troubleshooting & FAQ](#-troubleshooting--faq)
+4. [Screenshots](#-screenshots)
+5. [System Architecture & Data Flow](#-system-architecture--data-flow)
+6. [Media Delivery & Video Length Rationale](#-media-delivery--video-length-rationale)
+7. [Database Schema & Entities](#-database-schema--entities)
+8. [API Reference](#-api-reference)
+9. [Default Seeded Accounts & Content](#-default-seeded-accounts--content)
+10. [Getting Started & Local Setup](#-getting-started--local-setup)
+11. [Configuration & Environment Variables](#-configuration--environment-variables)
+12. [Folder Structure](#-folder-structure)
+13. [Troubleshooting & FAQ](#-troubleshooting--faq)
+14. [Credits & Attribution](#-credits--attribution)
+15. [License](#-license)
 
 ---
 
 ## 🏛 Architectural Overview
 
 CineWood follows a modern decoupled client-server architecture:
-- **Client Tier**: Single Page Application (SPA) powered by **React 19**, **Vite 8**, and a bespoke **Cinematic Dark Design System** (Tailwind CSS v4 + Vanilla CSS tokens).
+- **Client Tier**: Single Page Application (SPA) powered by **React 19**, **Vite 8**, and a bespoke **Cinematic Dark Design System** (Tailwind CSS v4 + Vanilla CSS design tokens).
 - **Application Tier**: High-throughput REST API powered by **Spring Boot 3.4.5** on **Java 25**, featuring Spring Security 6 with stateless JWT authentication, in-memory rate limiting, and Hibernate batching.
 - **Data Tier**: **MySQL 8.0** relational database with connection pooling handled by HikariCP.
 - **Media Delivery**: Adaptive bitrate streaming via **HLS (HTTP Live Streaming)** (`.m3u8` playlists) powered by `hls.js`.
@@ -54,7 +70,7 @@ CineWood follows a modern decoupled client-server architecture:
 - **Connection Pool**: HikariCP (Max: 20, Min-Idle: 5)
 - **JSON Processing**: Jackson (ISO-8601 timestamps)
 - **Validation**: Jakarta Bean Validation API
-- **Build & Dependency Management**: Apache Maven 3.9 (via Maven Wrapper `mvnw`)
+- **Build & Dependency Management**: Apache Maven 3.9 (via Maven Wrapper `mvnw.cmd`)
 - **Developer Experience**: Spring Boot DevTools & Project Lombok
 
 ---
@@ -67,7 +83,7 @@ CineWood follows a modern decoupled client-server architecture:
 - **Multi-Lingual Catalog Filters**: Instant pill-based language switching across **Telugu, Tamil, Kannada, Hindi, Malayalam, and English** with dynamic catalog querying.
 - **Top 10 Ranked Showcase**: Custom Netflix-style numerical rank typography (`#1` through `#10`) with large drop-shadowed index numerals.
 - **Custom HLS Video Player**:
-  - Auto-detection of `.m3u8` playlists with native fallback.
+  - Auto-detection of `.m3u8` playlists with native HTML5 video fallback.
   - Custom video controls (Scrubber progress, 10s skip forward/backward, volume slider, fullscreen).
   - Responsive auto-hiding controls with cursor tracking.
 - **Continue Watching Row**:
@@ -99,6 +115,18 @@ CineWood follows a modern decoupled client-server architecture:
 
 ---
 
+## 📸 Screenshots
+
+| Browse Catalog & Hero Banner | Custom HLS Video Player |
+|:---:|:---:|
+| *(Screenshots Placeholder: Browse Screen)* | *(Screenshots Placeholder: Video Player)* |
+
+| Movie Detail Modal & Feedback | Admin Operations Console |
+|:---:|:---:|
+| *(Screenshots Placeholder: Details & Rating)* | *(Screenshots Placeholder: Admin Dashboard)* |
+
+---
+
 ## 🔄 System Architecture & Data Flow
 
 ```
@@ -107,7 +135,7 @@ CineWood follows a modern decoupled client-server architecture:
                       |   React 19 + HLS.js Player  |
                       +--------------+--------------+
                                      |
-               HTTP Requests (Port 5173 / Vite Dev Proxy)
+                HTTP Requests (Port 5173 / Vite Dev Proxy)
                                      |
                                      v
                       +-----------------------------+
@@ -121,10 +149,35 @@ CineWood follows a modern decoupled client-server architecture:
             |                        |                        |
             v                        v                        v
   +-------------------+    +-------------------+    +-------------------+
-  |  MySQL 8.0 (3306) |    |  Razorpay Gateway |    |  Mux / Bitdash    |
-  |  (cinewood_db)    |    |  (Payments API)   |    |  (HLS CDN Streams)|
+  |  MySQL 8.0 (3306) |    |  Razorpay Gateway |    |  TMDB & CDN HLS   |
+  |  (cinewood_db)    |    |  (Payments API)   |    |  (Streams/Posters)|
   +-------------------+    +-------------------+    +-------------------+
 ```
+
+---
+
+## 🎥 Media Delivery & Video Length Rationale
+
+A common question is: *Why does CineWood stream 10–80 second high-definition video clips/trailers instead of 2-to-3 hour full-length feature films?*
+
+### 1. Protocol Parity (HTTP Live Streaming - HLS)
+- **HLS Chunking Architecture**: HLS does not stream monolithic video files. It breaks video into an `.m3u8` playlist manifest index and small **2-to-6 second media segments** (`.ts` or fragmented `.mp4`).
+- **Identical Client Mechanics**: The browser client (`hls.js`) buffers, parses segments, computes throughput, switches bitrates dynamically, and triggers HTML5 media events identically regardless of whether the video duration is 60 seconds or 150 minutes.
+- **Watch Progress Telemetry**: Progress percentage calculations, resume-state storage, and completion triggers in `WatchHistoryController` and `VideoPlayer.jsx` are fully proven and tested using short-form clips.
+
+### 2. Legal, Copyright & Digital Rights Management (DRM)
+- **Studio Copyright**: Distributing full theatrical feature films without distributor rights is illegal under DMCA and global intellectual property laws.
+- **Enterprise DRM Requirements**: Commercial streaming of theatrical releases mandates hardware DRM integration (Widevine Modular for Chromium/Android, Apple FairPlay for Safari/iOS, Microsoft PlayReady for Edge) with secure hardware decryption pipelines (Encrypted Media Extensions / EME) and license server infrastructure. 
+- Using official trailers, teasers, and open HLS demo streams (e.g., Mux, Bitdash, Unified Streaming) is the standard and legally compliant approach for software portfolio applications.
+
+### 3. Cloud Storage & Bandwidth Economics
+- Storing 22 full-length 1080p/4K movies would require **~150GB–400GB** of object storage (e.g., AWS S3, Cloudflare R2) and incur high egress bandwidth costs on every viewer session without providing any additional architectural value over short-form adaptive HLS streams.
+
+### 4. Production Scale-Up Roadmap
+In a commercial enterprise production environment, CineWood's media pipeline would scale by adding:
+1. **Video Ingestion Pipeline**: Asynchronous worker cluster (AWS Elemental MediaConvert or FFmpeg on Kubernetes) transcoding uploaded raw video masters into an adaptive multi-bitrate ladder (360p, 720p, 1080p, 4K).
+2. **Origin & Multi-CDN**: Serving `.m3u8` manifests and `.ts` fragments via Amazon CloudFront / Cloudflare with signed URLs/cookies and token authentication to prevent stream scraping.
+3. **DRM Licensing Server**: Integrating Widevine and FairPlay key exchange endpoints for encrypted CENC streams.
 
 ---
 
@@ -291,49 +344,80 @@ Includes 22 Indian blockbusters and international masterpieces with verified HLS
 ### 1. Prerequisites
 - **Node.js**: v18.0.0 or later (v20+ recommended)
 - **Java Development Kit (JDK)**: JDK 21 or later (Tested on Oracle JDK 25)
-- **MySQL**: MySQL Server 8.0
+- **MySQL**: MySQL Server 8.0 running on port 3306
 
 ---
 
-### 2. Database Setup
-
-Ensure MySQL server is running on port `3306`. If using the standalone binary:
-```powershell
-& "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe" --datadir="c:\Users\ADMIN\Documents\CineWood\backend\mysql-data" --port=3306 --console
+### 2. Clone the Repository
+```bash
+git clone https://github.com/your-username/CineWood.git
+cd CineWood
 ```
 
-Verify or configure credentials in `backend/src/main/resources/application.yml`:
-- **URL**: `jdbc:mysql://localhost:3306/cinewood_db?createDatabaseIfNotExist=true`
-- **Username**: `root`
-- **Password**: `mysql`
-
 ---
 
-### 3. Running the Backend
-
-Navigate to the `backend/` directory and run via the Maven wrapper:
-
-```powershell
-cd c:\Users\ADMIN\Documents\CineWood\backend
-.\mvnw.cmd spring-boot:run
-```
-
-The Spring Boot backend will start on **port 8080**.
-
----
-
-### 4. Running the Frontend
-
-Navigate to the `frontend/` directory, install packages, and start the Vite development server:
-
-```powershell
-cd c:\Users\ADMIN\Documents\CineWood\frontend
+### 3. Install Dependencies
+Install frontend dependencies:
+```bash
+cd frontend
 npm install
-npm run dev
+cd ..
 ```
 
-The Vite dev server will launch at:
-👉 **`http://localhost:5173`**
+---
+
+### 4. Configure Environment Variables
+Copy the `.env.example` template to `.env`:
+```bash
+cp .env.example .env
+```
+Ensure your MySQL username and password in `.env` match your local MySQL configuration:
+```env
+SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/cinewood_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+SPRING_DATASOURCE_USERNAME=root
+SPRING_DATASOURCE_PASSWORD=mysql
+JWT_SECRET=CineWoodDev$ecretKey2024!MustBeAtLeast256BitsLongForHS256Algorithm!!
+```
+
+---
+
+### 5. Run the Application with `run.bat`
+
+The simplest and recommended way to start CineWood on Windows is using `run.bat`:
+
+```cmd
+run.bat
+```
+*(Or double-click `run.bat` in Windows Explorer)*
+
+What `run.bat` automatically does:
+1. Loads configuration variables from `.env`.
+2. Verifies MySQL on port 3306 (starts `MySQL80` service if needed and waits for it to become ready).
+3. Launches the Spring Boot backend (`mvnw.cmd spring-boot:run`) on port 8080.
+4. Launches the Vite frontend (`npm run dev`) on port 5173.
+5. Automatically opens your default web browser to:
+   👉 **`http://localhost:5173`**
+
+---
+
+### Manual Step-by-Step Launch (Alternative)
+
+If you prefer to start services individually:
+
+1. **Start MySQL**:
+   Ensure MySQL is running on port `3306`.
+2. **Start Backend**:
+   ```cmd
+   cd backend
+   .\mvnw.cmd spring-boot:run
+   ```
+3. **Start Frontend**:
+   ```cmd
+   cd frontend
+   npm run dev
+   ```
+4. **Open Browser**:
+   Navigate to `http://localhost:5173`.
 
 ---
 
@@ -358,9 +442,10 @@ All settings in `backend/src/main/resources/application.yml` support system envi
 
 ```
 CineWood/
+├── run.bat                             # Unified Windows launcher script
+├── .env.example                        # Template for environment configuration
+├── .gitignore                          # Git ignore rules (secrets, build outputs)
 ├── README.md                           # Comprehensive documentation (this file)
-├── ui_blueprint/                       # Design mockups & Stitch blueprint references
-│   └── stitch_netflix_clone_ui_blueprint/
 ├── backend/                            # Spring Boot 3.4.5 Java Application
 │   ├── mvnw.cmd                        # Windows Maven wrapper
 │   ├── pom.xml                         # Maven dependencies & plugins
@@ -369,8 +454,8 @@ CineWood/
 │       ├── main/
 │       │   ├── java/com/cinewood/
 │       │   │   ├── CineWoodApplication.java
-│       │   │   ├── config/             # SecurityConfig, DataSeeder
-│       │   │   ├── controller/         # Auth, Media, Admin, Feedback, Payment, etc.
+│       │   │   ├── config/             # SecurityConfig, DataSeeder, GlobalExceptionHandler
+│       │   │   ├── controller/         # Auth, Media, Admin, Feedback, Payment, User
 │       │   │   ├── dto/                # Request & response data transfer objects
 │       │   │   ├── entity/             # JPA entity definitions (User, MediaItem, etc.)
 │       │   │   ├── repository/         # Spring Data JPA repositories with custom queries
@@ -382,6 +467,7 @@ CineWood/
 └── frontend/                           # React 19 + Vite Application
     ├── index.html                      # HTML entry with Razorpay SDK & Google Fonts
     ├── package.json                    # Frontend dependencies
+    ├── tsconfig.json                   # TypeScript/JSX compiler configuration
     ├── vite.config.js                  # Vite configuration with /api reverse proxy
     └── src/
         ├── main.jsx                    # React entrypoint
@@ -415,7 +501,7 @@ CineWood/
 ## ❓ Troubleshooting & FAQ
 
 ### 1. CORS Errors in Browser Console
-Ensure requests go through the Vite proxy (`/api/...`) or verify that `http://localhost:5173` is listed under `app.cors.allowed-origins` in `application.yml`.
+Ensure requests go through the Vite proxy (`/api/...`) or verify that `http://localhost:5173` is listed under `app.cors.allowed-origins` in `application.yml` or `CORS_ORIGINS` in `.env`.
 
 ### 2. Video Player shows a black screen or fails to load
 The test streams use HLS `.m3u8` playlists from public test endpoints (e.g., Mux / Bitdash). Ensure your internet connection allows outbound HTTPS streaming to media CDNs.
@@ -425,6 +511,17 @@ The test streams use HLS `.m3u8` playlists from public test endpoints (e.g., Mux
 
 ### 4. Direct Login without Profile Picker
 The login flow has been configured to directly navigate to `/` upon authentication, automatically setting the user's primary profile in the background so that watchlist, watch progress, and ratings work seamlessly.
+
+---
+
+## 🏆 Credits & Attribution
+
+- **The Movie Database (TMDB)**: For providing rich movie metadata, cast information, posters, and backdrop artwork.
+- **Razorpay**: For providing sandbox payment APIs and checkout UI integration.
+- **Google Fonts & Icons**: *Space Grotesk*, *Plus Jakarta Sans*, and *Material Symbols Outlined*.
+- **Unsplash**: For promotional banner background photography.
+- **HLS.js Team**: For the adaptive HTTP Live Streaming client library.
+- **Spring Boot & React Communities**: For the open-source frameworks powering this architecture.
 
 ---
 

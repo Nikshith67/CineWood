@@ -39,8 +39,8 @@ export default function HomePage() {
       setLoading(true);
       const res = await browseCatalog(language);
       setBrowseData(res.data);
-    } catch (err) {
-      console.error('Failed to load browse data:', err);
+    } catch {
+      // Browse data load failed — UI will show loading state
     } finally {
       setLoading(false);
     }
@@ -131,8 +131,8 @@ export default function HomePage() {
     try {
       const res = await searchMedia(query);
       setSearchResults(res.data);
-    } catch (err) {
-      console.error('Search failed:', err);
+    } catch {
+      // Search failed silently
     }
   }, []);
 

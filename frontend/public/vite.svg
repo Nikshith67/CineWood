@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E36"/>
+      <stop offset="55%" stop-color="#E50914"/>
+      <stop offset="100%" stop-color="#990008"/>
+    </linearGradient>
+    <linearGradient id="playGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FFD4D6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#E50914" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <rect width="62" height="62" x="1" y="1" rx="13" fill="none" stroke="#E50914" stroke-width="1.2" stroke-opacity="0.35"/>
+
+  <!-- CineWood Brand Emblem: Cinematic 'C' with Streaming Play Icon -->
+  <g filter="url(#glow)">
+    <!-- Bold 'C' monogram -->
+    <path d="M 46 18.5 C 41.5 13.5 34.5 10.5 26.5 10.5 C 14.6 10.5 6.5 20.2 6.5 32 C 6.5 43.8 14.6 53.5 26.5 53.5 C 34.5 53.5 41.5 50.5 46 45.5 L 39.5 39.8 C 36.2 43.5 31.8 45.2 26.5 45.2 C 19 45.2 14.8 38.8 14.8 32 C 14.8 25.2 19 18.8 26.5 18.8 C 31.8 18.8 36.2 20.5 39.5 24.2 Z" fill="url(#redGrad)"/>
+
+    <!-- Sharp Play Arrow -->
+    <path d="M 28 22.8 C 28 21.6 29.3 20.9 30.3 21.5 L 45 30.7 C 45.9 31.3 45.9 32.7 45 33.3 L 30.3 42.5 C 29.3 43.1 28 42.4 28 41.2 Z" fill="url(#playGrad)"/>
+  </g>
+</svg>

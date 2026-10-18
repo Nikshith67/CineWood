@@ -89,8 +89,7 @@ export default function SubscriptionModal({ isOpen, onClose }) {
         await updateUserSubscription(user.userId, 'FREE');
         updateSubscriptionTier('FREE');
         setSuccess(true);
-      } catch (err) {
-        console.error('Failed to update free subscription:', err);
+      } catch {
         updateSubscriptionTier('FREE');
         setSuccess(true);
       } finally {
@@ -132,7 +131,6 @@ export default function SubscriptionModal({ isOpen, onClose }) {
               updateSubscriptionTier(selectedPlanId);
               setSuccess(true);
             } catch (verifyErr) {
-              console.error('Payment verification failed:', verifyErr);
               const errMsg = verifyErr.response?.data?.error || 'Payment signature verification failed. Please contact support.';
               setError(errMsg);
             } finally {
@@ -160,7 +158,6 @@ export default function SubscriptionModal({ isOpen, onClose }) {
 
         const rzp = new window.Razorpay(options);
         rzp.on('payment.failed', function (resp) {
-          console.error('Razorpay payment failed:', resp.error);
           setError(`Payment Failed: ${resp.error?.description || 'Transaction declined'}`);
           setLoading(false);
         });
@@ -175,7 +172,6 @@ export default function SubscriptionModal({ isOpen, onClose }) {
         setLoading(false);
       }
     } catch (err) {
-      console.error('Payment initiation error:', err);
       const msg = err.response?.data?.error || err.message || 'Failed to initiate payment. Please try again.';
       setError(msg);
       setLoading(false);
